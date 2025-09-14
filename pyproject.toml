@@ -1,0 +1,28 @@
+[project]
+name = "tuurna"
+version = "0.1.0"
+description = """A library that describes the math of Tu'urna."""
+authors = [{name="Noah C. Benson", email="n@nben.net"}]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["ttrpg"]
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX',
+    'Operating System :: Unix',
+    'Operating System :: MacOS']
+dependencies = [
+     'numpy >= 1.24.0',
+     'scipy >= 1.7.0',
+     'matplotlib >= 3.9.0',
+     'icepool >= 2.0.4']
+
+[project.urls]
+homepage = "https://github.com/noahbenson/tuurna"
+documentation = "https://github.com/noahbenson/tuurna"
+repository = "https://github.com/noahbenson/tuurna"
