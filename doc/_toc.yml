@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: toc
 parts:
   - caption: Introduction
     chapters:
@@ -80,3 +80,5 @@ parts:
       - file: backgrounds/privileged
       - file: backgrounds/powerful
       - file: backgrounds/unique
+  - caption: Glossary
+    file: glossary
