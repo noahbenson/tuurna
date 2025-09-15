@@ -2,13 +2,13 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: toc
+root: start
 parts:
-  - caption: Introduction
+  - caption: Introduction to Tu'urna
     chapters:
-      - file: intro/intro
       - file: intro/how-to-play
       - file: intro/legal
+      - file: glossary
   - caption: Characters
     chapters:
       - file: characters/intro
@@ -28,50 +28,50 @@ parts:
       - file: skills/intro
       - file: skills/inherent
       - file: skills/mundane
-      - caption: Exceptional Skills
-        sections:
-          - file: skills/exceptional/intro
-          - file: skills/exceptional/clairvoyance
-            # Magic that is realized by observing reality and seeing truth
-            # beneath the superficial seeming of things.
-            # Subskills: Prophecy, Farsight
-          - file: skills/exceptional/enchantment
-            # The infusion of magic into mundane art or into places.
-            # Subskills: Warding, Imbuing
-          - file: skills/exceptional/performance
-            # Bardic skills that can control, inspire, and manipulate others.
-            # Subskills: Bravado, Manipulation
-          - file: skills/exceptional/druidry
-            # Mundane and supernatural woodcraft and naturalism.
-            # Subskills: Tempestry, Symbiotes
-          - file: skills/exceptional/warcraft
-            # Expertise in advanced fighting styles.
-            # Subskills: Uncanny Grace, Uncanny Might
-          - file: skills/exceptional/mysticism
-            # Magic that engages with the Outside (that which lies beyond the
-            # boundaries of the Virtuous God's creations).
-            # Subskills: Oneiromancy, Fatalism
-          - file: skills/exceptional/forestry
-            # Expertise in natural environs: manipulating and traversing them.
-            # Subskills: Trapping, Animalism
-          - file: skills/exceptional/subterfuge
-            # Mundane and supernatural stealth, thievery, and misdirection.
-            # Subskills: Shadows, Sleight of Hand
-          - file: skills/exceptional/psionics
-            # Abilities gained through meditation and mental control.
-            # Subskills: Telepathy, Discipline
-          - file: skills/exceptional/sorcery
-            # Magic that is wielded by inherent or instinctual skill and whose
-            # use is typically difficult for the sorcerer to describe.
-            # Subskills: Channeling, Metamorphosis
-          - file: skills/exceptional/virtue
-            # Powers granted directly by the Virtuous God or one of Its
-            # servants.
-            # Subskills: Theurgy, Holiness
-          - file: skills/exceptional/wizardry
-            # The magic derived from analysis and observation of the world
-            # (i.e., the fruits of science in a magical world).
-            # Subskills: Alchemy, Artifice
+  - caption: Exceptional Skills
+    chapters:
+      - file: skills/exceptional/intro
+      - file: skills/exceptional/clairvoyance
+        # Magic that is realized by observing reality and seeing truth
+        # beneath the superficial seeming of things.
+        # Subskills: Prophecy, Farsight
+      - file: skills/exceptional/enchantment
+        # The infusion of magic into mundane art or into places.
+        # Subskills: Warding, Imbuing
+      - file: skills/exceptional/performance
+        # Bardic skills that can control, inspire, and manipulate others.
+        # Subskills: Bravado, Manipulation
+      - file: skills/exceptional/druidry
+        # Mundane and supernatural woodcraft and naturalism.
+        # Subskills: Tempestry, Symbiotes
+      - file: skills/exceptional/warcraft
+        # Expertise in advanced fighting styles.
+        # Subskills: Uncanny Grace, Uncanny Might
+      - file: skills/exceptional/mysticism
+        # Magic that engages with the Outside (that which lies beyond the
+        # boundaries of the Virtuous God's creations).
+        # Subskills: Oneiromancy, Fatalism
+      - file: skills/exceptional/forestry
+        # Expertise in natural environs: manipulating and traversing them.
+        # Subskills: Trapping, Animalism
+      - file: skills/exceptional/subterfuge
+        # Mundane and supernatural stealth, thievery, and misdirection.
+        # Subskills: Shadows, Sleight of Hand
+      - file: skills/exceptional/psionics
+        # Abilities gained through meditation and mental control.
+        # Subskills: Telepathy, Discipline
+      - file: skills/exceptional/sorcery
+        # Magic that is wielded by inherent or instinctual skill and whose
+        # use is typically difficult for the sorcerer to describe.
+        # Subskills: Channeling, Metamorphosis
+      - file: skills/exceptional/virtue
+        # Powers granted directly by the Virtuous God or one of Its
+        # servants.
+        # Subskills: Theurgy, Holiness
+      - file: skills/exceptional/wizardry
+        # The magic derived from analysis and observation of the world
+        # (i.e., the fruits of science in a magical world).
+        # Subskills: Alchemy, Artifice
   - caption: Backgrounds
     chapters:
       - file: backgrounds/intro
@@ -80,5 +80,4 @@ parts:
       - file: backgrounds/privileged
       - file: backgrounds/powerful
       - file: backgrounds/unique
-  - caption: Glossary
-    file: glossary
+
