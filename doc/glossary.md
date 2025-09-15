@@ -12,12 +12,31 @@ Acumen
   See also: [Inherent Skills](/skills/inherent),
   [Acumen](skills:inherent:acumen).
 
+Background
+  A feature of a {term}`Character` that describes the character's history and
+  past experience. Backgrounds are explained extensively in the
+  [Backgrounds](/backgrounds/intro) section.
+  
+  See also: [Backgrounds](/backgrounds/intro).
+
+Challenge
+  A type of {term}`Roll` in which a {term}`Character` or group of
+  {term}`Character`s attempt to overcome a fixed {term}`Difficulty`.
+  
+  See also: {term}`Roll`, {term}`Difficulty`, {term}`Contest`.
+
 Character
   Any independent actor that is capable of directly acting or exerting
   influence on the game world.
 
   See also: [Introduction to Characters](/characters/intro) and [Creating a
   Character](/characters/creating).
+
+Contest
+  A type of {term}`Roll` in which two or more {term}`Character`s pit their
+  abilities against each other.
+  
+  See also: {term}`Roll`, {term}`Challenge`.
 
 Craft
   The {term}`Inherent Skill` that measures a character's coordination,
@@ -26,6 +45,20 @@ Craft
   
   See also: [Inherent Skills](/skills/inherent),
   [Craft](skills:inherent:craft).
+
+Derived Skill
+  A {term}`Skill` that cannot be advanced normally and whose {term}`Level`
+  instead depends on the {term}`Level` of other {term}`Skill`s.
+  
+  See also: [Derived Skills](/skills/derived).
+
+Difficulty
+  A value representing how difficult a particular {term}`Roll` is. A character
+  must roll a value equal to or higher than a {term}`Challenge`'s difficulty in
+  order to succeed at the {term}`Challenge`.
+  
+  See also: {term}`Roll`, {term}`Challenge`, 
+  [Challenges](gameplay:rolls:challenges).
 
 Domain Skill
   A mid-level {term}`Mundane Skill` or {term}`Exceptional Skill` that depends
@@ -55,7 +88,7 @@ Fundamental Skill
 Harmony
   The {term}`Inherent Skill` that measures a character's attunement with the
   intentionality of actors in the world, including their ability to read,
-  persuade, and decieve other {term}`Characters`.
+  persuade, and decieve other {term}`Character`s.
   
   See also: [Inherent Skills](/skills/inherent),
   [Harmony](skills:inherent:harmony).
@@ -67,14 +100,21 @@ Inherent Skill
   
   See also: [Inherent Skills](/skills/inherent).
 
+Level
+  A {term}`Character`'s ability with a particular {term}`Skill` as represented
+  by an integer greater than or equal to 0 and less than or equal to 12. See
+  the section on [Skill Levels](skills:levels) for more information.
+  
+  See also: [Skill Levels](skills:levels).
+
 Mundane Skill
   Any {term}`Skill` for which expertise does not confer any supernatural or
   uncanny abilities. Mundane skills represent skills that either everyone has
-  access to (e.g., [Fitness](/skills/mundane#fitness),
-  [Logic](/skills/mundane#logic),
-  [Working Memory](/skills/mundane#working-memory)) or that anyone could
-  hypothetically learn (e.g., [Tailoring](/skills/mundane#tailoring), 
-  [Music](/skills/mundane#music), [Engineering](/skills/mundane#)).
+  access to (e.g., [Fitness](skills:mundane:fitness),
+  [Logic](skills:mundane:logic),
+  [Working Memory](skills:mundane:working-memory)) or that anyone could
+  hypothetically learn (e.g., [Tailoring](skills:mundane:tailoring), 
+  [Music](skills:mundane:music), [Engineering](skills:mundane:engineering)).
   
   See also: [Mundane Skills](/skills/mundane).
 
@@ -82,7 +122,7 @@ Narrator
   The real-life human being who serves as the narrator, orchestrator, and
   adjudicator of the game. The Narrator is not considered a {term}`Player` in
   game terms.
-  
+
 NPC
   An abbreviation of {term}`Nonplayer Character`; often abbreviated
   {term}`NPC`.
@@ -128,7 +168,6 @@ Roll
   see the gameplay section on [rolls](/gameplay/rolls).
   
   See also: [Rolls](/gameplay/rolls)
-
 
 Skill
   A category of knowledge or influence in which a character can excel that is
