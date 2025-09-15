@@ -79,6 +79,15 @@ Exceptional Skill
   
   See also: [Exceptional Skills](/skills/exceptional/intro).
 
+Fate
+  The extent to which circumstances favor or disfavor the outcome of a
+  {term}`Roll`. The {term}`Fate` of a {term}`Roll` may be one of Cursed,
+  Unlucky, Neutral, Lucky, or Blessed. See the 
+  [Fate Subsection](gameplay:rolls:fate) of the 
+  [Rolls Section](/gameplay/rolls) for more information.
+  
+  See also: [Fate](gameplay:rolls:fate), [Rolls](/gameplay/rolls).
+
 Fundamental Skill
   A top-level {term}`Mundane Skill` or {term}`Exceptional Skill` on which
   {term}`Domain Skill`s depend.
@@ -106,6 +115,15 @@ Level
   the section on [Skill Levels](skills:levels) for more information.
   
   See also: [Skill Levels](skills:levels).
+
+Leverage
+  During a {term}`Contest`, the {term}`Narrator` may award {term}`Leverage` to
+  one or more {term}`Character`s participating in the {term}`Roll` that
+  represents the relative effectiveness of their strategy. When determining a
+  {term}`Contest`'s outcome, the {term}`Narrator` compares sum of the 
+  {term}`Score` and {term}`Leverage` for each {term}`Character.
+  
+  See also: [Contest](gameplay:rolls:contest).
 
 Mundane Skill
   Any {term}`Skill` for which expertise does not confer any supernatural or
@@ -153,6 +171,19 @@ Practical Skill
   on a {term}`Domain Skill`..
   
   See also: [](skills:hierarchy)
+
+Score
+  When a {term}`Character` makes a {term}`Roll`, their {term}`Score` at the
+  {term}`Roll` is the total number of successes rolled.
+  
+  See also: [Rolls](/gameplay/rolls).
+
+Supernatural Potential
+  A {term}`Character` with Supernatural Potential in a {term}`Skill` may
+  achieve a {term}`Score` as high as 12 when they make a {term}`Roll` using
+  that {term}`Skill` rather than the typical maximum of 9.
+  
+  See also: [Rolls](/gameplay/rolls)
 
 Reason
   The {term}`Inherent Skill` that measures a character's reasoning capacity and
