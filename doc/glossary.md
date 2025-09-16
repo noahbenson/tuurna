@@ -19,11 +19,13 @@ Background
   
   See also: [Backgrounds](/backgrounds/intro).
 
-Challenge
-  A type of {term}`Roll` in which a {term}`Character` or group of
-  {term}`Character`s attempt to overcome a fixed {term}`Difficulty`.
+Check
+  A narrative situation in which a {term}`Roll` is needed to adjudicate the
+  outcome. In a {term}`Check`, a {term}`Character` attempts to use a
+  {term}`Skill` to overcome a fixed  {term}`Difficulty`.
   
-  See also: {term}`Roll`, {term}`Difficulty`, {term}`Contest`.
+  See also: [](gameplay:rolls:checks) {term}`Roll`, {term}`Difficulty`,
+  {term}`Contest`.
 
 Character
   Any independent actor that is capable of directly acting or exerting
@@ -36,7 +38,7 @@ Contest
   A type of {term}`Roll` in which two or more {term}`Character`s pit their
   abilities against each other.
   
-  See also: {term}`Roll`, {term}`Challenge`.
+  See also: {term}`Roll`, {term}`Check`, [](gameplay:rolls:contests).
 
 Craft
   The {term}`Inherent Skill` that measures a character's coordination,
@@ -54,11 +56,10 @@ Derived Skill
 
 Difficulty
   A value representing how difficult a particular {term}`Roll` is. A character
-  must roll a value equal to or higher than a {term}`Challenge`'s difficulty in
-  order to succeed at the {term}`Challenge`.
+  must roll a value equal to or higher than a {term}`Check`'s difficulty in
+  order to succeed at the {term}`Check`.
   
-  See also: {term}`Roll`, {term}`Challenge`, 
-  [Challenges](gameplay:rolls:challenges).
+  See also: {term}`Roll`, {term}`Check`, [](gameplay:rolls:checks).
 
 Domain Skill
   A mid-level {term}`Mundane Skill` or {term}`Exceptional Skill` that depends
@@ -86,7 +87,7 @@ Fate
   [Fate Subsection](gameplay:rolls:fate) of the 
   [Rolls Section](/gameplay/rolls) for more information.
   
-  See also: [Fate](gameplay:rolls:fate), [Rolls](/gameplay/rolls).
+  See also: [](gameplay:rolls:fate), [Rolls](/gameplay/rolls).
 
 Fundamental Skill
   A top-level {term}`Mundane Skill` or {term}`Exceptional Skill` on which

@@ -1,25 +1,27 @@
 # Rolls
 
 Frequently during gameplay, a {term}`Character` will attempt to do something
-whose outcome is not immediately obvious. For example, a {term}`Character` may
-attempt to leap across a cavern or to pick a lock. Other times, a
-{term}`Character` may attempt something that is contested by another
-{term}`Character`. For example two people might arm wrestle each other or
-compete in a game of chess. In such cases, the {term}`Narrator` may use a
-{term}`Roll` to help adjudicate the outcome. 
+whose outcome is not immediately obvious to the {term}`Narrator`. For example,
+a {term}`Character` may attempt to leap across a cavern or to pick a lock. The
+outcomes of such actions depend on the skills of the {term}`Character`
+performing the action. In such cases, the {term}`Narrator` may use one or more
+{term}`Roll`s to help adjudicate the outcome.
 
-Whenever a character makes a {term}`Roll`, they {term}`Roll` using one or more
-{term}`Skill`s. The {term}`Skill`s used in a {term}`Roll` are decided by the
-{term}`Narrator` (though a {term}`Player` may choose a course of action for
-their {term}`Player Character` that suggests the use of a particular
-{term}`Skill`). To execute the {term}`Roll`, a {term}`Player` rolls a number of
-6-sided dice equal to their {term}`Level` in the {term}`Skill`. Each die whose
-value is 1 or 2 counts as a failure. Each die whose value is 3 or 4 counts as a
-success. Each die whose value is 5 or 6 both counts as a success and is
-rerolled. The {term}`Roll`'s {term}`Score` is the total number of success
+
+## The Rules of a Roll
+
+All {term}`Roll`s are made by a {term}`Character` using a {term}`Skill`. When
+the {term}`Narrator` calls for a {term}`Roll`, it is up to them to decide what
+{term}`Skill` is appropriate. To execute the {term}`Roll`, the {term}`Player`
+rolls a number of 6-sided dice equal to their {term}`PC`'s {term}`Level` in the
+{term}`Skill`. Each die whose value is 1 or 2 counts as a *loss*. Each die
+whose value is 3 or 4 counts as a *win*. Each die whose value is 5 or 6 both
+counts as a *win* and causes an additional die to be rolled and treated
+identically. The {term}`Roll`'s {term}`Score` is the total number of *win*
 values rolled or 9, whichever is lower. If a rule grants a {term}`Character`
 {term}`Supernatural Potential` in a {term}`Skill`, then the {term}`Character`
-may achieve a {term}`Score` as high as 12 when making ainstead of 9.
+may achieve a {term}`Score` as high as 12 when making a {term}`Roll` instead of
+9.
 
 ```{note} 
 
@@ -30,25 +32,39 @@ long as the {term}`Character`'s {term}`Level` in the {term}`Skill` is greater
 than 0.
 ```
 
-There are two types of {term}`Roll`s: {term}`Challenge`s and {term}`Contest`s.
+```{note}
+
+It is up to the {term}`Player` to narrate the course of action of their
+{term}`PC`, and in so doing they can suggest the use of a particular
+{term}`Skill`; for example, if a {term}`Player` chooses to bash a door down,
+they can be reasonably confident that the {term}`Narrator` will call for a
+{term}`Physique` {term}`Roll` or at least that they won't call for a 
+{term}`Reason` {term}`Roll`. It remains up to the {term}`Narrator` to determine
+when a {term}`Roll` is required and which {term}`Skill` or {term}`Skills` are
+relevant to the circumstances.
+```
+
+## What kinds of situations call for rolls?
+
+Broadly speaking, there are two types of situations that require {term}`Roll`s
+to adjudicate: {term}`Check`s and {term}`Contest`s.
 
 
-(gameplay:rolls:challenges)=
-## Challenges
+(gameplay:rolls:checks)=
+## Skill Checks
 
-Some {term}`Roll`s represent attempts to resolve static {term}`Challenge`s that
-exist in the world. In such a {term}`Challenge`, the outcome depends only on
-whether one can apply one's {term}`Skill` in the moment with sufficient grace
-to overcome a fixed {term}`Difficulty`. Such {term}`Challenge`s are in contrast
-to contested rolls ({term}`Contest`s) in which one's skill is set against that
-of another.
+Some narrative situations that arise in gameplay represent attempts to resolve
+a static challenge that exist in the world. In such a situation, the outcome
+depends only on whether one can apply one's {term}`Skill` in the moment with
+sufficient grace to overcome a fixed {term}`Difficulty`. Such
+{term}`Check`s are in contrast to contested rolls ({term}`Contest`s) in
+which one's skill is set against that of another.
 
 When the {term}`Narrator` feels that an outcome is uncertain, they must decide
-on the {term}`Skill` (or {term}`Skill`s) that can resolve the {term}`Challenge`
-and the {term}`Challenge`'s {term}`Difficulty`. The 
-{term}`Character` or {term}`Character`s must then execute the {term}`Roll`. The {term}`Narrator` then
-compares the character's {term}`Score` against the {term}`Difficulty`
-
+on the {term}`Skill` (or {term}`Skill`s) that can resolve the {term}`Check` and
+the {term}`Check`'s {term}`Difficulty`. The {term}`Character` or
+{term}`Character`s must then execute the {term}`Roll`. The {term}`Narrator`
+then compares the character's {term}`Score` against the {term}`Difficulty`
 
 ```{list-table} Difficulty Levels
 :header-rows: 1
@@ -102,38 +118,40 @@ compares the character's {term}`Score` against the {term}`Difficulty`
     impossible task only about two out of three times.
 ```
 
-When a {term}`Challenge` occurs, the {term}`Narrator` will narrate the
-challenge and request that one or more {term}`Character`s make a
-{term}`Roll`. Generally speaking, the {term}`Challenge` is succeeded if the
-value rolled is greater than or equal to the {term}`Difficulty`, though in some
-cases, there may be multiple levels of success. For example, when trying to
-remember a point of history, a {term}`Character` who {term}`Roll`s 6
-[Scholarship](skills:mundane:scholarship) would remember more details than a
-{term}`Character` who {term}`Roll`s 5 but fewer than one who {term}`Roll`s 7.
+When a {term}`Check` occurs, the {term}`Narrator` will narrate the challenge
+and request that one or more {term}`Character`s make a {term}`Roll` in a
+particular {term}`Skill`. Generally speaking, the {term}`Check` is succeeded if
+the {term}`Score` of the {term}`Roll` is greater than or equal to the
+{term}`Difficulty`, though, in some cases, there may be multiple levels of
+success. For example, when trying to remember a point of history, a
+{term}`Character` who {term}`Roll`s 6 [Scholarship](skills:mundane:scholarship)
+would likely remember more details than a {term}`Character` who {term}`Roll`s 5
+but fewer than one who {term}`Roll`s 7.
 
-When a group {term}`Challenge` is required, the {term}`Narrator` will decide
+When a group {term}`Check` is required, the {term}`Narrator` will decide
 whether the {term}`Difficulty` must be met by the maximum, the minimum, or the
-average value rolled. The maximum value should be used when any
+average value rolled. The maximum value should typically be used when any
 {term}`Character`'s success would yield success, such as when trying to spot
-something hidden. The minimum value should be used when any {term}`Character`'s
-failure would yield failure, such as when attempting to sneak past guards. The
-average should be used when all {term}`Character`s have equal opportunity to
-contribute to success, such as when trying to lift something heavy.
+something hidden. The minimum value should typically be used when any
+{term}`Character`'s failure would yield failure, such as when attempting to
+sneak past guards. The average should typically be used when all
+{term}`Character`s have equal opportunity to contribute to success, such as
+when trying to lift something heavy.
 
 
 (gameplay:rolls:contests)=
-## Contests
+## Contests of Skill
 
-Contests occur when two or more {term}`Character`s act in conflict. In such a
-case the {term}`Narrator` must decide which {term}`Skill` each character is
-rolling and whether there is {term}`Leverage` inherent in the contest.
-{term}`Leverage` occurs when one {term}`Character` is using a strategy
-that is inherently more advantageous in the {term}`Contest`. For example, if
-one {term}`Character` where channeling fire at another {term}`Character` who
-was countering with an origami shield, the character using the fire would have
-substantial {term}`Leverage` due to paper's inherent weakness to fire. The
-{term}`Narrator` might award five points of {term}`Leverage` to the fire
-sorcerer in such a case.
+{term}`Contest`s occur when two or more {term}`Character`s act in conflict. In
+such a case the {term}`Narrator` must decide which {term}`Skill` each character
+is must {term}`Roll` and whether there is {term}`Leverage` inherent in the
+contest.  {term}`Leverage` occurs when one {term}`Character` has an advantage
+or is using a strategy that is inherently more advantageous in the
+{term}`Contest`. For example, if one {term}`Character` were channeling fire at
+another {term}`Character` who was countering with an origami shield, the
+character using the fire would have substantial {term}`Leverage` due to paper's
+inherent weakness to fire. The {term}`Narrator` might award five points of
+{term}`Leverage` to the fire sorcerer in such a case.
 
 ```{note}
 
@@ -158,7 +176,7 @@ tie occurs when a tie is not possible, then the {term}`Contest` is rerolled.
 
 
 (gameplay:rolls:fate)=
-## Fate
+## The Fate of a Roll
 
 Occasionally, a rule may declare, or the {term}`Narrator` may decide, that the
 circumstances of a {term}`Roll` are especially favored or unfavored. In such
