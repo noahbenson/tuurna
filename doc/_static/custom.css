@@ -1,0 +1,13 @@
+.std-term {
+    color: #000000;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
