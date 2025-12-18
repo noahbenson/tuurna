@@ -11,3 +11,8 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+table caption span.caption-number {
+    font-weight: bold;
+    font-style: normal;
+}
