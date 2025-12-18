@@ -8,6 +8,7 @@ performing the action. In such cases, the {term}`Narrator` may use one or more
 {term}`Roll`s to help adjudicate the outcome.
 
 
+(gameplay:rolls)=
 ## The Rules of a Roll
 
 All {term}`Roll`s are made by a {term}`Character` using a {term}`Skill`. When
@@ -38,11 +39,103 @@ It is up to the {term}`Player` to narrate the course of action of their
 {term}`PC`, and in so doing they can suggest the use of a particular
 {term}`Skill`; for example, if a {term}`Player` chooses to bash a door down,
 they can be reasonably confident that the {term}`Narrator` will call for a
-{term}`Physique` {term}`Roll` or at least that they won't call for a 
-{term}`Reason` {term}`Roll`. It remains up to the {term}`Narrator` to determine
-when a {term}`Roll` is required and which {term}`Skill` or {term}`Skills` are
-relevant to the circumstances.
+[Strength](skills:core:strength) {term}`Roll` or at least that they won't call
+for a [Memory](skills:core:memory) {term}`Roll`. It remains up to the
+{term}`Narrator` to determine when a {term}`Roll` is required and which
+{term}`Skill` or {term}`Skill`s are relevant to the circumstances.
 ```
+
+(gameplay:rolls:modifiers)=
+### Roll Modifiers: Leverage and Labor
+{term}`Roll`s are sometimes modified by contextual circumstances in the game or
+by other game rules called {term}`Modifier`s. For example, if one
+{term}`Character` uses an {term}`Ability` to injure the wrist of another
+{term}`Character`, then the injured {term}`Character` would likely have a
+penalty representing the injury's encumbrance applied to any {term}`Roll` made
+using their injured wrist. The size of the penalty (the {term}`Modifier`) would
+likely depend on the effectiveness of the {term}`Ability`.
+
+There are two kinds of {term}`Modifier`s applied to {term}`Roll`s:
+{term}`Leverage`, which adds a flat (potentially negative) value to a
+{term}`Roll`'s {term}`Score`, and {term}`Labor`, which causes a certain number
+of the dice to be rerolled. (Both of these modifiers are described below.) When
+executing a {term}`Roll`, all changes to {term}`Leverage` are integrated, as
+are all changes to {term}`Labor`, prior to rolling any dice&mdash;each
+{term}`Roll` is executed with a single {term}`Leverage` and a single
+{term}`Labor` value.
+
+All {term}`Modifier`s can be applied to a {term}`Roll` by either a game rule or
+by the {term}`Narrator`. When a game rule affects a {term}`Roll`, the
+{term}`Modifier` is called a {term}`Specific Modifier`. When the
+{term}`Narrator` affects a {term}`Roll`, the modifier is called a
+{term}`Circumstantial Modifier`. In general, {term}`Circumstantial Modifier`s
+are awarded by the {term}`Narrator` due to the contextual setting of a
+{term}`Roll` and/or the effectiveness of the strategy being employed by a
+{term}`Character`.
+
+A {term}`Modifier` may apply two kinds of changes to a {term}`Roll`:
+1. Usually, {term}`Modifier`s update the value. For example, "*You gain +1
+   {term}`Leverage` to [Charisma](skills:core:charisma) {term}`Roll`s*" or
+   "*You gain -2 {term}`Labor` to [Endurance](skills:core:endurance)
+   {term}`Roll`s*".
+2. Some rules instead set the minimum or maximum value the {term}`Modifier` can
+   take. For example, "*Your minimum {term}`Labor` for
+   [Scholarship](skills:mundane:scholarship) {term}`Roll`s is 2*" or "*Your
+   maximum {term}`Leverage` for [Tactics](skills:mundane:tactics) {term}`Roll`s
+   is 3*".
+
+All updates to a {term}`Modifier` are summed prior to the application of any
+minima or maxima. When multiple rules declare different minimum
+{term}`Modifier` values for a {term}`Roll`, only the rule resulting in the
+highest minimum {term}`Modifier` value is applied; for the maximum, only the
+rule resulting in the lowest maximum {term}`Modifier` value is applied.  When
+the maximum {term}`Modifier` value is less than the minimum {term}`Modifier`
+value, the minimum is ignored.
+
+(gameplay:rolls:modifiers:leverage)=
+#### What is Leverage?
+{term}`Leverage` generally represents the extent to which a course of action
+will be effective as a means of achieving its goals. A high {term}`Leverage`
+such as +3 means that a {term}`Character` is guaranteed to perform the
+{term}`Roll` as if their {term}`Skill` {term}`Level` were higher than their
+true {term}`Level` due to natural or circumstantial advantages.
+
+Mechanically, a {term}`Roll`'s {term}`Leverage` is added to its
+{term}`Score`. Positive {term}`Leverage` values increase the {term}`Score`
+while negative {term}`Leverage` values result in a lower {term}`Score`.
+
+(gameplay:rolls:modifiers:labor)=
+#### What is Labor?
+{term}`Labor` represents a {term}`Character`'s advantage or distadvantage on a
+{term}`Roll` that is due to their own effort or influence or the effort or
+influence of others working against them. Unlike {term}`Leverage`, which adds a
+flat number to the {term}`Score` of a {term}`Roll`, {term}`Labor` gives the
+{term}`Character` performing the {term}`Roll` either more or fewer dice to
+{term}`Roll`. A {term}`Labor` of +2, for example, would allow the
+{term}`Character` to {term}`Roll` two additional dice. If a {term}`Character`'s
+{term}`Labor` on a {term}`Roll` reduces the number of dice they {term}`Roll`
+below 1, the {term}`Character` still rolls 1 die.
+
+```{note}
+
+Note that, although {term}`Leverage` is statistically identical to
+{term}`Labor`&mdash;in that the expected advantage of rolling 1 additional die
+is 1 additional {term}`Score`, which is exactly what is provided by a point of
+{term}`Leverage`&mdash;a point of {term}`Labor` can potentially provides the
+{term}`Character` with either no additional {term}`Score` or with a bonus to
+their {term}`Score` that is substantially more than 1.
+```
+
+(gameplay:rolls:modifiers:examples)=
+#### Leverage and Labor Examples
+
+TODO
+
+In the following examples, we rely on two characters: Ylir and Zejhe. Ylir's
+{term}`Level` in the [Armaments](skills:mundane:armaments) {term}`Skill` is 5;
+Zejhe's {term}`Level` in the [Instinct](skills:core:instinct)
+{term}`Skill` is 4 and in the [Armaments](skills:mundane:armaments) is 2.
+
 
 ## What kinds of situations call for rolls?
 
@@ -51,7 +144,7 @@ to adjudicate: {term}`Check`s and {term}`Contest`s.
 
 
 (gameplay:rolls:checks)=
-## Skill Checks
+### Skill Checks
 
 Some narrative situations that arise in gameplay represent attempts to resolve
 a static challenge that exist in the world. In such a situation, the outcome
@@ -138,9 +231,8 @@ sneak past guards. The average should typically be used when all
 {term}`Character`s have equal opportunity to contribute to success, such as
 when trying to lift something heavy.
 
-
 (gameplay:rolls:contests)=
-## Contests of Skill
+### Contests of Skill
 
 {term}`Contest`s occur when two or more {term}`Character`s act in conflict. In
 such a case the {term}`Narrator` must decide which {term}`Skill` each character
@@ -171,8 +263,11 @@ Once both {term}`Character`s have {term}`Roll`ed their respective
 {term}`Skill`s, the outcome is determined by the sum of each
 {term}`Character`'s {term}`Score` and {term}`Leverage`. Typically, the
 {term}`Character` with the highest sum wins the {term}`Contest`, but it is up
-to the {term}`Narrator` to compares these values and narrates the outcome. If a
-tie occurs when a tie is not possible, then the {term}`Contest` is rerolled.
+to the {term}`Narrator` to compares these values and narrates the outcome. The
+{term}`Narrator` may choose to narrate a different outcome if, for example, the
+sum of {term}`Score` and {term}`Leverage` for one {term}`Character` is
+substantially higher than that of the other. If a tie occurs when a tie is not
+possible, then the {term}`Contest` is rerolled.
 
 
 (gameplay:rolls:fate)=
@@ -186,22 +281,47 @@ slightly changed to favor our disfavor the resulting {term}`Score`. The
 
 ```{list-table} Fates
 :header-rows: 1
-:name: difficulty-levels
+:name: fates
 
 * - Name
   - Description
 * - Cursed
-  - Dice that show 5 or 6 still count as a success but are no longer rerolled.
+  - Dice that show 5 or 6 still count as a *win* but are no longer rerolled.
 * - Unlucky
-  - Dice that show 5 still count as a success but are no longer rerolled.
+  - Dice that show 5 still count as a *win* but are no longer rerolled.
 * - Neutral
   - No changes to the rules.
 * - Lucky
-  - Dice that show 2 count as a success instead of as a failure.
+  - Dice that show 2 count as a *win* instead of as a *loss*.
 * - Blessed
-  - Dice that show 1 or 2 count as a success instead of as a failure.
+  - Dice that show 1 or 2 count as a *win* instead of as a *loss*.
 ```
 
 A {term}`Fate` applies to a single {term}`Character`'s roll, so in a
 {term}`Contest`, some characters may make {term}`Roll`s with different 
 {term}`Fate`s.
+
+
+(gamplay:rolls:mutliskill)=
+## Rolls with Multiple Skills
+
+Occasionally, a rule or the {term}`Narrator` will require that a {term}`Roll`
+be performed using multiple {term}`Skill`s. In such a case, the
+{term}`Character` executes both {term}`Roll`s and uses the sum of both
+{term}`Score`s.  If the the {term}`Roll` is a {term}`Check`, then the
+{term}`Difficulty` is doubled. If the {term}`Roll` is a {term}`Contest`, then
+both players must execute {term}`Roll`s for the same number of {term}`Skill`s.
+If two {term}`Skill`s are required of only one of the {term}`Character`s, then
+the other {term}`Character` should roll their single {term}`Skill` twice.
+
+For example, if one {term}`Character` is using art to try to effect an emotion
+in another {term}`Character` who does not wish to experience that emotion, then
+the {term}`Narrator` might call for a {term}`Contest` of the former's
+[Craft](skills:mundane:craft) and [Communication](skills:core:communication)
+against the latter's [Communication](skills:core:communication), reasoning that
+the production of a work of art is both communication
+([Communication](skills:core:communication)) and
+[Craft](skills:mundane:craft). The former {term}`Character` would roll both
+{term}`Skill`s while the latter {term}`Character` would roll
+[Communication](skills:core:communication) twice.
+

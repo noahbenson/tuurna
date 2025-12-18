@@ -5,12 +5,9 @@ their glossary entries and should be understood according to this glossary
 rather than their conventional English definition.
 
 ```{glossary}
-Acumen
-  The {term}`Inherent Skill` that measures a character's quick-wittedness,
-  working memory, perceptiveness, and instincts.
-  
-  See also: [Inherent Skills](/skills/inherent),
-  [Acumen](skills:inherent:acumen).
+Ability
+  Any feature granted to a {term}`Character` by a {term}`Skill`. Typically,
+  each {term}`Skill` grants some number of {term}`Abilities<Ability>`.
 
 Background
   A feature of a {term}`Character` that describes the character's history and
@@ -34,25 +31,40 @@ Character
   See also: [Introduction to Characters](/characters/intro) and [Creating a
   Character](/characters/creating).
 
+Circumstantial Labor
+  {term}`Labor` that is granted by the {term}`Narrator` due to circumstances
+  surrounding a roll that are not accounted for by the rules.
+  
+  See also: [Rolls](/gameplay/rolls), {term}`Labor`,
+  {term}`Specific Labor`.
+
+Circumstantial Leverage
+  {term}`Leverage` that is granted by the {term}`Narrator` due to circumstances
+  surrounding a roll that are not accounted for by the rules.
+  
+  See also: [Rolls](/gameplay/rolls), {term}`Leverage`,
+  {term}`Specific Leverage`.
+
+Circumstantial Modifier
+  Either {term}`Leverage` or {term}`Labor` that is granted by the
+  {term}`Narrator` due to circumstances surrounding a roll that are not
+  accounted for by the rules.
+  
+  See also: [Rolls](/gameplay/rolls), {term}`Labor`, {term}`Leverage`,
+  {term}`Modifier`, {term}`Specific Modifier`.
+
 Contest
   A type of {term}`Roll` in which two or more {term}`Character`s pit their
   abilities against each other.
   
   See also: {term}`Roll`, {term}`Check`, [](gameplay:rolls:contests).
 
-Craft
-  The {term}`Inherent Skill` that measures a character's coordination,
-  imaginativeness, cunning, and ability to instinctively model and engineer the
-  world around themself.
+Core Skill
+  The subset of {term}`Skill`s that all {term}`Character`s, including
+  {term}`Nonplayer Character`s, have access to. All {term}`Character`s begin
+  with a {term}`Level` of at least 1 in all {term}`Core Skill`s.
   
-  See also: [Inherent Skills](/skills/inherent),
-  [Craft](skills:inherent:craft).
-
-Derived Skill
-  A {term}`Skill` that cannot be advanced normally and whose {term}`Level`
-  instead depends on the {term}`Level` of other {term}`Skill`s.
-  
-  See also: [Derived Skills](/skills/derived).
+  See also: [The Core Skills](skills:list:core).
 
 Difficulty
   A value representing how difficult a particular {term}`Roll` is. A character
@@ -62,10 +74,17 @@ Difficulty
   See also: {term}`Roll`, {term}`Check`, [](gameplay:rolls:checks).
 
 Domain Skill
-  A mid-level {term}`Mundane Skill` or {term}`Exceptional Skill` that depends
-  on a {term}`Fundamental Skill` and on which {term}`Practical Skill`s depend.
+  A {term}`Skill` on which a {term}`Fundamental Skill` depends. 
+  {term}`Domain Skill`s represent specific subdomains of their 
+  {term}`Fundamental Skill`s.
   
-  See also: [](skills:hierarchy)
+  See also: [](skills:hierarchy), {term}`Fundamental Skill`.
+
+Effect
+  A condition applied to a {term}`Character` that adds or changes rules for
+  the {term}`Character`.
+
+  See also: [](/characters/effects).
 
 Ellipsis
   A game mode in which time passes quickly from the perspective of the
@@ -90,25 +109,39 @@ Fate
   See also: [](gameplay:rolls:fate), [Rolls](/gameplay/rolls).
 
 Fundamental Skill
-  A top-level {term}`Mundane Skill` or {term}`Exceptional Skill` on which
-  {term}`Domain Skill`s depend.
+  A top-level {term}`Skill` that depends on {term}`Domain Skill`s. 
+  {term}`Fundamental Skill`s cannot be advanced directly; rather, their
+  {term}`Level` is always equal to the maximum {term}`Level` that has been
+  obtained in at least two of the {term}`Fundamental Skill`'s
+  {term}`Domain Skill`s.
   
-  See also: [](skills:hierarchy)
+  See also: [](skills:hierarchy), {term}`Domain Skill`.
 
-Harmony
-  The {term}`Inherent Skill` that measures a character's attunement with the
-  intentionality of actors in the world, including their ability to read,
-  persuade, and decieve other {term}`Character`s.
+Humanoid
+  An {term}`Character` (either an {term}`NPC` or a {term}`PC`) that is either
+  human or essentially human-like in its physical and mental characteristics.
+  All mundane humans are {term}`Humanoid`s, as are other bipedal intelligent
+  species such as faeries or goblins. All {term}`Humanoid`s have access to all
+  of the {term}`Core Skill`s and all of the {term}`Mundane Skill`s.
   
-  See also: [Inherent Skills](/skills/inherent),
-  [Harmony](skills:inherent:harmony).
+  See also: {term}`Nonhumanoid`.
 
-Inherent Skill
-  One of the five {term}`Skill` that is inherent to a {term}`Character`s
-  existence: {term}`Physique`, {term}`Craft`, {term}`Reason`, {term}`Acumen`,
-  and {term}`Harmony`.
+Item
+  A physical object with a weight, size, sturdiness, and structure.
   
-  See also: [Inherent Skills](/skills/inherent).
+  See also: [](/characters/inventory).
+
+Labor
+  During a {term}`Roll`, the {term}`Narrator` may award {term}`Leverage`
+  representing the advantage or disadvantage granted by the contextual
+  circumstances of the {term}`Roll` and the effectiveness of the strategy
+  employed by the {term}`Character`. {term}`Leverage` may be any integer, and
+  the value is added to the result of the leveraged {term}`Roll`. In a
+  {term}`Contest`, different {term}`Leverage`s may be awarded to different
+  participants.
+  
+  See also: [Contest](gameplay:rolls:contests),
+  [Roll Modifiers: Leverage and Labor](gameplay:rolls:modifiers)
 
 Level
   A {term}`Character`'s ability with a particular {term}`Skill` as represented
@@ -118,46 +151,67 @@ Level
   See also: [Skill Levels](skills:levels).
 
 Leverage
-  During a {term}`Contest`, the {term}`Narrator` may award {term}`Leverage` to
-  one or more {term}`Character`s participating in the {term}`Roll` that
-  represents the relative effectiveness of their strategy. When determining a
-  {term}`Contest`'s outcome, the {term}`Narrator` compares sum of the 
-  {term}`Score` and {term}`Leverage` for each {term}`Character.
+  The {term}`Leverage` of a {term}`Roll` representing the advantage or
+  disadvantage granted to the {term}`Roll` by the contextual circumstances and
+  the effectiveness of the strategy employed by the {term}`Character`.
   
-  See also: [Contest](gameplay:rolls:contest).
+  {term}`Leverage` may be any integer, and the value is added to the result of
+  the leveraged {term}`Roll`. In a {term}`Contest`, different {term}`Leverage`s
+  may be awarded to different participants. Game rules may grant a {term}`Roll`
+  {term}`Specific Leverage`, or the {term}`Narrator` may award
+  {term}`Circumstantial Leverage`.
+  
+  See also: [The Rules of a Roll](gameplay:rolls),
+  [Roll Modifiers: Leverage and Labor](gameplay:rolls:modifiers).
+
+Modifier
+  A {term}`Modifier` refers to either {term}`Labor` or {term}`Leverage`, each
+  of which affect the {term}`Score` of a particular {term}`Roll` by a
+  particular {term}`Character`.
+  
+  See also: [The Rules of a Roll](gameplay:rolls),
+  [Roll Modifiers: Leverage and Labor](gameplay:rolls:modifiers).
 
 Mundane Skill
-  Any {term}`Skill` for which expertise does not confer any supernatural or
-  uncanny abilities. Mundane skills represent skills that either everyone has
-  access to (e.g., [Fitness](skills:mundane:fitness),
-  [Logic](skills:mundane:logic),
-  [Working Memory](skills:mundane:working-memory)) or that anyone could
-  hypothetically learn (e.g., [Tailoring](skills:mundane:tailoring), 
-  [Music](skills:mundane:music), [Engineering](skills:mundane:engineering)).
+  Any of the 14 {term}`Skill`s that are automatically posessed by all
+  {term}`Humanoid` {term}`Character`s. Expertise in a {term}`Mundane Skill`
+  does not typically confer any supernatural or uncanny abilities.
   
-  See also: [Mundane Skills](/skills/mundane).
+  See also: {term}`Core Skill`, [The Mundane Skills](/skills/mundane).
 
 Narrator
   The real-life human being who serves as the narrator, orchestrator, and
   adjudicator of the game. The Narrator is not considered a {term}`Player` in
   game terms.
 
+Nonhumanoid
+  An {term}`NPC` that is neither human nor sufficiently human-like in its
+  physical and mental characteristics to be considered human. All
+  {term}`Character`s are either {term}`Humanoid` or {term}`Nonhumanoid`.
+  {term}`Nonhumanoid`s, where {term}`Humanoid`s are limited to mundane humans
+  plus other bipedal intelligent species such as faeries or goblins. All
+  {term}`Nonhumanoid`s have access to all of the {term}`Core Skill`s.
+  
+  See also: {term}`Humanoid`.
+
 NPC
   An abbreviation of {term}`Nonplayer Character`; often abbreviated
   {term}`NPC`.
 
 Nonplayer Character
-  Any {term}`Character` that is controlled by the {term}`Narrator`.
+  Any {term}`Character` that is controlled by the {term}`Narrator`, often
+  abbreviated {term}`NPC`. {term}`NPC`s are further subdivided into
+  {term}`Humanoid` and {term}`Nonhumanoid` {term}`NPC`s.
+
+Path Skill
+  The subset of {term}`Skill`s that all {term}`Player Character`s (and some
+  {term}`Nonplayer Character`s) have access to. {term}`Path Skill`s provide
+  {term}`Character`s with a means of accessing {term}`Exceptional Skill`s.
+  
+  See also: [The Path Skills](skills:list:core).
 
 PC
   An abbreviation of {term}`Player Character`.
-
-Physique
-  The {term}`Inherent Skill` that measures a character's physical prowess and
-  abilities such as their fitness and strength.
-  
-  See also: [Inherent Skills](/skills/inherent),
-  [Physique](skills:inherent:physique).
 
 Player
   A real-life human being who controls at least one of the game's
@@ -167,17 +221,32 @@ Player Character
   Any {term}`Character` that is controlled by one of the {term}`Player`s; often
   abbreviated {term}`PC`.
 
-Practical Skill
-  A lower-level {term}`Mundane Skill` or {term}`Exceptional Skill` that depends
-  on a {term}`Domain Skill`..
-  
-  See also: [](skills:hierarchy)
-
 Score
   When a {term}`Character` makes a {term}`Roll`, their {term}`Score` at the
   {term}`Roll` is the total number of successes rolled.
   
   See also: [Rolls](/gameplay/rolls).
+
+Specific Labor
+  {term}`Labor` that is granted to a {term}`Character` making a {term}`Roll`
+  due to specific game rules.
+  
+  See also: [Rolls](/gameplay/rolls), {term}`Labor`,
+  {term}`Circumstantial Labor`.
+
+Specific Leverage
+  {term}`Leverage` that is granted to a {term}`Character` making a {term}`Roll`
+  due to specific game rules.
+  
+  See also: [Rolls](/gameplay/rolls), {term}`Leverage`,
+  {term}`Circumstantial Leverage`.
+
+Specific Modifier
+  Either {term}`Leverage` or {term}`Labor` that is granted by specific game
+  rules.
+  
+  See also: [Rolls](/gameplay/rolls), {term}`Labor`, {term}`Leverage`,
+  {term}`Modifier`, {term}`Circumstantial Modifier`.
 
 Supernatural Potential
   A {term}`Character` with Supernatural Potential in a {term}`Skill` may
@@ -185,14 +254,6 @@ Supernatural Potential
   that {term}`Skill` rather than the typical maximum of 9.
   
   See also: [Rolls](/gameplay/rolls)
-
-Reason
-  The {term}`Inherent Skill` that measures a character's reasoning capacity and
-  their familiarity with rational ways of measuring and understanding the
-  world. Reason includes logical capabilities as well as scholarship.
-  
-  See also: [Inherent Skills](/skills/inherent),
-  [Reason](skills:inherent:reason).
 
 Roll
   An adjudication of an game event using dice. All rolls follow a particular
@@ -205,6 +266,21 @@ Skill
   A category of knowledge or influence in which a character can excel that is
   tracked using the game's skill system.
   
-  See also: [Introduction to Skills](/skills/intro), {term}`Inherent Skill`,
+  See also: [Introduction to Skills](/skills/intro), {term}`Core Skill`,
   {term}`Mundane Skill`, {term}`Exceptional Skill`.
+
+Tag
+  A categorization given to {term}`Skill`s, {term}`Effect`s, {term}`Item`s,
+  or {term}`Background`s that do not imply any rules but can be used to
+  identify the feature. For example, a rule might declare that a creature
+  is immune to any {term}`Effect` tagged {term}`#fear`.
+  
+  {term}`Tag`s are defined in the glossary and always begin with a hash (`#`)
+  character.
+  
+  See also: [](intro:how-to-play:how-to-read)
+
+#fear
+  Tagged {term}`Effect`s are rooted in and/or feed off of the afflicted
+  {term}`Character`'s fears.
 ```
