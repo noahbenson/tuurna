@@ -24,6 +24,13 @@ Check
   See also: [](gameplay:rolls:checks) {term}`Roll`, {term}`Difficulty`,
   {term}`Contest`.
 
+Chapter
+  A narrative unit of time during gameplay. Chapters beginnings and ends are
+  managed and announced by the {term}`Narrator`, but typically include
+  approximately 5&ndash;10 {term}`Scene`s.
+  
+  See also: {term}`Scene`, [](gameplay:time).
+
 Character
   Any independent actor that is capable of directly acting or exerting
   influence on the game world.

@@ -31,12 +31,11 @@ bones or an improvement in their balance.
     a wound of level 2 or higher if you do not already have a wound of the
     reduced level.
 * - 2
-  - **Toughness**. When you take damage, your natural toughness allows you to
-    shake some of it off. Roll resilience and reduce the damage by the score.
+  - 
 * - 3
-  - **Lesser Endurance**. At the end of a scene, you may shrug off a level 1
-    wound. Once you have used this ability, you may not do so again until the
-    next chapter.
+  - **Lesser Endurance**. At the end of a {term}`Scene`, you may shrug off a
+    {term}`Severity` 1 {term}`Wound`. Once you have used this {term}`Ability`,
+    you may not do so again until the next {term}`Chapter`.
 * - 4
   - **Health**. When you roll **Toughness** against wasting damage, you may 
     add 1 to the outcome.

@@ -19,10 +19,8 @@ parts:
   - caption: Gameplay
     chapters:
       - file: gameplay/rolls
-      - file: gameplay/scenes
-      - file: gameplay/ellipsis
+      - file: gameplay/time
       - file: gameplay/tension
-      - file: gameplay/advancement
       - file: gameplay/magic
   - caption: Skills
     chapters:

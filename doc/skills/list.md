@@ -40,7 +40,7 @@ All {term}`Humanoid` {term}`Character`s have access to all
   * [Engineering](skills:mundane:engineering)
   * [Survival](skills:mundane:survival)
   * [Stealth](skills:mundane:stealth)
-* [Philosophy](skills:mundane:philosophy)
+* [Reason](skills:mundane:reason)
   * [Logic](skills:mundane:logic)
   * [Scholarship](skills:mundane:scholarship)
   * [Investigation](skills:mundane:investigation)
@@ -51,7 +51,10 @@ All {term}`Humanoid` {term}`Character`s have access to all
 
 All {term}`PC`s and some {term}`NPC`s have access to the {term}`Path Skill`s.
 {term}`Path Skill`s represent means of accessing the 
-{term}`Exceptional Skill`s, and most 
+{term}`Exceptional Skill`s, which are typically each compatible with a subset
+of {term}`Path Skill`s.
+
+
 
 
 (skills:list:exceptional)=
