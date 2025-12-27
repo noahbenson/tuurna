@@ -20,7 +20,16 @@ dependencies = [
      'numpy >= 1.24.0',
      'scipy >= 1.7.0',
      'matplotlib >= 3.9.0',
-     'icepool >= 2.0.4']
+     'icepool >= 2.0.4',
+     'pandas>=2.3.1']
+
+[project.optional-dependencies]
+book = [
+     'jupyter-book>=1.0.4,<2',
+     'ipywidgets>=8.1.7',
+     'scipy>=1.16.0',
+     'jupyterlab-spellchecker',
+     'ipympl']
 
 [project.urls]
 homepage = "https://github.com/noahbenson/tuurna"
