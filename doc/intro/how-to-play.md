@@ -47,7 +47,7 @@ tools. Primarily, any game term that has a specific meaning in the game, such
 as {term}`Roll` or {term}`Narrator`, is defined in the [glossary](/glossary)
 and is capitalized and linked to its glossary entry whenever that game term is
 intended. When a term is not capitalized and linked to its glossary entry, it
-should be read using its conventional english meaning. For example,
+should be read using its conventional English meaning. For example,
 conventionally the {term}`Narrator` of the game is considered a player, but in
 game terms, a {term}`Player` refers specifically to a person who control a
 {term}`PC`. It is thus correct to assert that "The {term}`Narrator` is a player
