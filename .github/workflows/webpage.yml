@@ -10,6 +10,11 @@
 name: Build and Deploy Website
 
 on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'doc/**'
   workflow_dispatch:
 
 jobs:
