@@ -1,5 +1,10 @@
-.std-term {
+html[data-theme="light"] .std-term {
     color: #000000;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+html[data-theme="dark"] .std-term {
+    color: #FAFAFA;
     text-decoration: none !important;
     font-weight: bold;
 }
