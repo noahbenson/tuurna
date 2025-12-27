@@ -34,14 +34,14 @@ their [Fitness](skills:core:fitness) would automatically advance to
 
 {term}`Fundamental Skill`s can also be advanced using normal methods, but they
 can never be advanced to a {term}`Level` higher than the maximum {term}`Level`
-obtained by its dependant {term}`Practical Skill`s. For example, if a
+obtained by their dependant {term}`Practical Skill`s. For example, if a
 {term}`Character` has an [Intuition](skills:path:intuition) {term}`Level` of 3,
 an [Attunement](skills:path:attunement) {term}`Level` of 4, and a
 [Virtue](skills:path:virtue) {term}`Level` of 0, then they would be able to
 increase their [Intuition](skills:path:intuition) to {term}`Level` 4 because at
 least one of its dependant {term}`Practical Skill`s is greater than or equal
 to 4. They would then be unable to advance their
-[Intuition](skills:path:intuition) to {term}`Level`, however, 5 because neither
+[Intuition](skills:path:intuition) to {term}`Level` 5, however, because neither
 of the {term}`Practical Skill`s [Attunement](skills:path:attunement) are high
 enough.
 

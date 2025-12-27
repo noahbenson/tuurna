@@ -4,7 +4,7 @@
 Most of the time during gameplay, {term}`Player`s will be directly narrating
 their {term}`Character`'s intentions while the {term}`Narrator` actively
 negotiates the ensuing actions and narrates their effects on the world, all
-without the temporay structure of explicit rounds or turns. This mode of
+without the temporary structure of explicit rounds or turns. This mode of
 running the game, however is just one {term}`Game Mode` called a {term}`Scene`.
 In addition to {term}`Scene`s, there are {term}`Game Mode`s called
 {term}`Tension` and {term}`Ellipsis`. Several {term}`Scene`s,
@@ -43,7 +43,7 @@ timing of how things play out becomes critical for understanding how the
 violence (i.e., combat), but any event where timing is critical could call for
 {term}`Tension`.
 
-The {term}`Narrator` is in charge of detemining when {term}`Tension` starts and
+The {term}`Narrator` is in charge of determining when {term}`Tension` starts and
 ends during any {term}`Scene`. {term}`Tension` does not interrupt a
 {term}`Scene`; rather, it changes the way the events of the {term}`Scene` are
 tracked. {term}`Scene`s do not end when {term}`Tension` starts or ends unless

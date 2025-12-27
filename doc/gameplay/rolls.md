@@ -106,7 +106,7 @@ while negative {term}`Leverage` values result in a lower {term}`Score`.
 
 (gameplay:rolls:modifiers:labor)=
 #### What is Labor?
-{term}`Labor` represents a {term}`Character`'s advantage or distadvantage on a
+{term}`Labor` represents a {term}`Character`'s advantage or disadvantage on a
 {term}`Roll` that is due to their own effort or influence or the effort or
 influence of others working against them. Unlike {term}`Leverage`, which adds a
 flat number to the {term}`Score` of a {term}`Roll`, {term}`Labor` gives the
