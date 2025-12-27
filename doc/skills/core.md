@@ -1,4 +1,5 @@
-# Core Skills
+(skills:core)=
+# The Core Skills
 
 A character's {term}`Core Skill`s are analogous to game statistics in many
 games. In many games, the inherent statistics include such concepts as

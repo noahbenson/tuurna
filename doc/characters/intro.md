@@ -1,3 +1,4 @@
+(characters:intro)=
 # The Characters of Tu'urna
 
 The cast of {term}`Character`s of Tu'urna encompasses the spectrum of creatures
@@ -17,6 +18,9 @@ can be further subcategorized.
 (characters:intro:npcs)=
 ## Nonplayer Characters
 
+(characters:intro:npcs:humanoid)=
 ### Humanoid Characters
 
-### Inhumanoid Characters
+(characters:intro:npcs:nonhumanoid)=
+### Nonhumanoid Characters
+

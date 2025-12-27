@@ -1,8 +1,9 @@
-# Mundane Skills
+(skills:mundane)=
+# The Mundane Skills
 
 {term}`Mundane Skill`s are skills that all {term}`Humanoid` {term}`Character`s
 have regardless of any choices made during [Character
-Creation](/characters/creation). All characters begin with all
+Creation](characters:creation). All characters begin with all
 {term}`Mundane Skill`s at level 1.
 
 
@@ -314,10 +315,10 @@ Creation](/characters/creation). All characters begin with all
 ```
 
 
-(skills:mundane:philosophy)=
-## Philosophy
+(skills:mundane:reason)=
+## Reason
 
-```{list-table} Philosophy Skill Levels
+```{list-table} Reason Skill Levels
 :header-rows: 1
 
 * - Level

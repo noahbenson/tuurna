@@ -12,9 +12,14 @@ Ability
 Background
   A feature of a {term}`Character` that describes the character's history and
   past experience. Backgrounds are explained extensively in the
-  [Backgrounds](/backgrounds/intro) section.
+  [Backgrounds](backgrounds:intro) section.
   
-  See also: [Backgrounds](/backgrounds/intro).
+  See also: [Backgrounds](backgrounds:intro).
+
+Campaign
+  A sequence of {term}`Chapter`s of gameplay that comprise a single story arc.
+  
+  See also: {term}`Chapter`.
 
 Check
   A narrative situation in which a {term}`Roll` is needed to adjudicate the
@@ -35,21 +40,21 @@ Character
   Any independent actor that is capable of directly acting or exerting
   influence on the game world.
 
-  See also: [Introduction to Characters](/characters/intro) and [Creating a
-  Character](/characters/creating).
+  See also: [Introduction to Characters](characters:intro) and [Creating a
+  Character](characters:creating).
 
 Circumstantial Labor
   {term}`Labor` that is granted by the {term}`Narrator` due to circumstances
   surrounding a roll that are not accounted for by the rules.
   
-  See also: [Rolls](/gameplay/rolls), {term}`Labor`,
+  See also: [Rolls](gameplay:rolls), {term}`Labor`,
   {term}`Specific Labor`.
 
 Circumstantial Leverage
   {term}`Leverage` that is granted by the {term}`Narrator` due to circumstances
   surrounding a roll that are not accounted for by the rules.
   
-  See also: [Rolls](/gameplay/rolls), {term}`Leverage`,
+  See also: [Rolls](gameplay:rolls), {term}`Leverage`,
   {term}`Specific Leverage`.
 
 Circumstantial Modifier
@@ -57,7 +62,7 @@ Circumstantial Modifier
   {term}`Narrator` due to circumstances surrounding a roll that are not
   accounted for by the rules.
   
-  See also: [Rolls](/gameplay/rolls), {term}`Labor`, {term}`Leverage`,
+  See also: [Rolls](gameplay:rolls), {term}`Labor`, {term}`Leverage`,
   {term}`Modifier`, {term}`Specific Modifier`.
 
 Contest
@@ -73,6 +78,12 @@ Core Skill
   
   See also: [The Core Skills](skills:list:core).
 
+Damage
+  Harm caused to a {term}`Character` that is sufficient to cause lasting
+  {term}`Wound`s if not mitigated.
+  
+  See also: {term}`Wound`, [](characters:effects:damage).
+
 Difficulty
   A value representing how difficult a particular {term}`Roll` is. A character
   must roll a value equal to or higher than a {term}`Check`'s difficulty in
@@ -81,62 +92,85 @@ Difficulty
   See also: {term}`Roll`, {term}`Check`, [](gameplay:rolls:checks).
 
 Domain Skill
-  A {term}`Skill` on which a {term}`Fundamental Skill` depends. 
-  {term}`Domain Skill`s represent specific subdomains of their 
-  {term}`Fundamental Skill`s.
+  A {term}`Skill` for which expertise confers exceptional or uncanny abilities.
+  Domain Skills, as a rule, are possessed by exceptional
+  {term}`Character`s such as the {term}`Player Character`s.
   
-  See also: [](skills:hierarchy), {term}`Fundamental Skill`.
+  See also: [Domain Skills](skills:exceptional:intro).
 
 Effect
   A condition applied to a {term}`Character` that adds or changes rules for
   the {term}`Character`.
 
-  See also: [](/characters/effects).
+  See also: [](characters:effects).
 
 Ellipsis
   A game mode in which time passes quickly from the perspective of the
   {term}`Player`s.
   
-  See also: [Ellipsis](/gameplay/ellipsis)
+  See also: [](gameplay:time:ellipsis), {term}`Ellipsis Point`.
 
-Exceptional Skill
-  A {term}`Skill` for which expertise confers exceptional or uncanny abilities.
-  Exceptional skills, as a rule, are possessed by exceptional
-  {term}`Character`s such as the {term}`Player Character`s.
+Ellipsis Ability
+  An {term}`Ability` that can be used during {term}`Ellipsis`. Some
+  {term}`Abilities<Ability>` can be used during either {term}`Ellipsis` or
+  {term}`Scene`s; such {term}`Abilities<Ability>` are considered both
+  {term}`Ellipsis Abilities<Ellipsis Ability>` and 
+  {term}`Scene Abilities<Scene Ability>`.
   
-  See also: [Exceptional Skills](/skills/exceptional/intro).
+  See also: {term}`Ability`, {term}`Scene Ability`, {term}`Ellipsis`,
+  [](skills:levels:abilities).
+
+Ellipsis Point
+  A resource that can be used during {term}`Ellipsis` to activate certain
+  {term}`Abilities<Ability>`.
+  
+  See also: [](gameplay:time:ellipsis).
+
+Exceptional Point
+  A resource that can be used during {term}`Ellipsis` to increase one's
+  {term}`Path Skill`s or {term}`Domain Skill`s.
+  
+  See also: [](characters:advancement).
 
 Fate
   The extent to which circumstances favor or disfavor the outcome of a
   {term}`Roll`. The {term}`Fate` of a {term}`Roll` may be one of Cursed,
   Unlucky, Neutral, Lucky, or Blessed. See the 
   [Fate Subsection](gameplay:rolls:fate) of the 
-  [Rolls Section](/gameplay/rolls) for more information.
+  [Rolls Section](gameplay:rolls) for more information.
   
-  See also: [](gameplay:rolls:fate), [Rolls](/gameplay/rolls).
+  See also: [](gameplay:rolls:fate), [Rolls](gameplay:rolls).
 
 Fundamental Skill
-  A top-level {term}`Skill` that depends on {term}`Domain Skill`s. 
+  A top-level {term}`Skill` that depends on {term}`Practical Skill`s. 
   {term}`Fundamental Skill`s cannot be advanced directly; rather, their
   {term}`Level` is always equal to the maximum {term}`Level` that has been
   obtained in at least two of the {term}`Fundamental Skill`'s
-  {term}`Domain Skill`s.
+  {term}`Practical Skill`s.
   
-  See also: [](skills:hierarchy), {term}`Domain Skill`.
+  See also: [](skills:hierarchy), {term}`Practical Skill`.
+
+Game Mode
+  One of three general rulesets dictating how gameplay evolves based on the
+  level of detail being tracked in the story: {term}`Tension`, {term}`Scene`,
+  or {term}`Ellipsis`.
+  
+  See also: [](gameplay:time)
 
 Humanoid
-  An {term}`Character` (either an {term}`NPC` or a {term}`PC`) that is either
-  human or essentially human-like in its physical and mental characteristics.
-  All mundane humans are {term}`Humanoid`s, as are other bipedal intelligent
-  species such as faeries or goblins. All {term}`Humanoid`s have access to all
-  of the {term}`Core Skill`s and all of the {term}`Mundane Skill`s.
+  An {term}`Character` that is either human or essentially human-like in its
+  physical and mental characteristics. All mundane humans are
+  {term}`Humanoid`s, as are other bipedal intelligent species such as faeries
+  or goblins. All {term}`Humanoid`s have access to all of the
+  {term}`Core Skill`s and all of the {term}`Mundane Skill`s. All {term}`PC`s
+  are {term}`Humanoid`.
   
-  See also: {term}`Nonhumanoid`.
+  See also: {term}`Nonhumanoid`, [](characters:intro:npcs).
 
 Item
   A physical object with a weight, size, sturdiness, and structure.
   
-  See also: [](/characters/inventory).
+  See also: [](characters:inventory).
 
 Labor
   During a {term}`Roll`, the {term}`Narrator` may award {term}`Leverage`
@@ -184,7 +218,7 @@ Mundane Skill
   {term}`Humanoid` {term}`Character`s. Expertise in a {term}`Mundane Skill`
   does not typically confer any supernatural or uncanny abilities.
   
-  See also: {term}`Core Skill`, [The Mundane Skills](/skills/mundane).
+  See also: {term}`Core Skill`, [The Mundane Skills](skills:mundane).
 
 Narrator
   The real-life human being who serves as the narrator, orchestrator, and
@@ -193,13 +227,14 @@ Narrator
 
 Nonhumanoid
   An {term}`NPC` that is neither human nor sufficiently human-like in its
-  physical and mental characteristics to be considered human. All
-  {term}`Character`s are either {term}`Humanoid` or {term}`Nonhumanoid`.
-  {term}`Nonhumanoid`s, where {term}`Humanoid`s are limited to mundane humans
-  plus other bipedal intelligent species such as faeries or goblins. All
-  {term}`Nonhumanoid`s have access to all of the {term}`Core Skill`s.
+  physical and mental characteristics. All {term}`NPC`s are either
+  {term}`Humanoid` or {term}`Nonhumanoid`, and all {term}`PC`s are
+  {term}`Humanoid`. {term}`Nonhumanoid`s, where {term}`Humanoid`s are limited
+  to mundane humans plus other bipedal intelligent species such as faeries or
+  goblins. All {term}`Nonhumanoid`s have access to all of the
+  {term}`Core Skill`s.
   
-  See also: {term}`Humanoid`.
+  See also: {term}`Humanoid`, [](characters:intro:npcs).
 
 NPC
   An abbreviation of {term}`Nonplayer Character`; often abbreviated
@@ -213,7 +248,7 @@ Nonplayer Character
 Path Skill
   The subset of {term}`Skill`s that all {term}`Player Character`s (and some
   {term}`Nonplayer Character`s) have access to. {term}`Path Skill`s provide
-  {term}`Character`s with a means of accessing {term}`Exceptional Skill`s.
+  {term}`Character`s with a means of accessing {term}`Domain Skill`s.
   
   See also: [The Path Skills](skills:list:core).
 
@@ -228,31 +263,38 @@ Player Character
   Any {term}`Character` that is controlled by one of the {term}`Player`s; often
   abbreviated {term}`PC`.
 
+Practical Skill
+  A {term}`Skill` on which a {term}`Fundamental Skill` depends. 
+  {term}`Practical Skill`s represent specific subdomains of their 
+  {term}`Fundamental Skill`s.
+  
+  See also: [](skills:hierarchy), {term}`Fundamental Skill`.
+
 Score
   When a {term}`Character` makes a {term}`Roll`, their {term}`Score` at the
   {term}`Roll` is the total number of successes rolled.
   
-  See also: [Rolls](/gameplay/rolls).
+  See also: [Rolls](gameplay:rolls).
 
 Specific Labor
   {term}`Labor` that is granted to a {term}`Character` making a {term}`Roll`
   due to specific game rules.
   
-  See also: [Rolls](/gameplay/rolls), {term}`Labor`,
+  See also: [Rolls](gameplay:rolls), {term}`Labor`,
   {term}`Circumstantial Labor`.
 
 Specific Leverage
   {term}`Leverage` that is granted to a {term}`Character` making a {term}`Roll`
   due to specific game rules.
   
-  See also: [Rolls](/gameplay/rolls), {term}`Leverage`,
+  See also: [Rolls](gameplay:rolls), {term}`Leverage`,
   {term}`Circumstantial Leverage`.
 
 Specific Modifier
   Either {term}`Leverage` or {term}`Labor` that is granted by specific game
   rules.
   
-  See also: [Rolls](/gameplay/rolls), {term}`Labor`, {term}`Leverage`,
+  See also: [Rolls](gameplay:rolls), {term}`Labor`, {term}`Leverage`,
   {term}`Modifier`, {term}`Circumstantial Modifier`.
 
 Supernatural Potential
@@ -260,21 +302,38 @@ Supernatural Potential
   achieve a {term}`Score` as high as 12 when they make a {term}`Roll` using
   that {term}`Skill` rather than the typical maximum of 9.
   
-  See also: [Rolls](/gameplay/rolls)
+  See also: [Rolls](gameplay:rolls)
 
 Roll
   An adjudication of an game event using dice. All rolls follow a particular
   formula based on the kind of event being adjudicated. For more information,
-  see the gameplay section on [rolls](/gameplay/rolls).
+  see the gameplay section on [rolls](gameplay:rolls).
   
-  See also: [Rolls](/gameplay/rolls)
+  See also: [Rolls](gameplay:rolls)
+
+Scene
+  The fundamental unit of game time during gameplay. {term}`Scene`s are periods
+  of gameplay that represent relatively short amounts of time in the game
+  world, typically between a few minutes and a few hours.
+  
+  See also: {term}`Chapter`, [](gameplay:time:scenes).
+
+Scene Ability
+  An {term}`Ability` that can be used during {term}`Scene`s. Some
+  {term}`Abilities<Ability>` can be used during either {term}`Ellipsis` or
+  {term}`Scene`s; such {term}`Abilities<Ability>` are considered both
+  {term}`Ellipsis Abilities<Ellipsis Ability>` and 
+  {term}`Scene Abilities<Scene Ability>`.
+  
+  See also: {term}`Ability`, {term}`Ellipsis Ability`, {term}`Scene`,
+  [](skills:levels:abilities).
 
 Skill
   A category of knowledge or influence in which a character can excel that is
   tracked using the game's skill system.
   
-  See also: [Introduction to Skills](/skills/intro), {term}`Core Skill`,
-  {term}`Mundane Skill`, {term}`Exceptional Skill`.
+  See also: [Introduction to Skills](skills:intro), {term}`Core Skill`,
+  {term}`Mundane Skill`, {term}`Domain Skill`.
 
 Tag
   A categorization given to {term}`Skill`s, {term}`Effect`s, {term}`Item`s,
@@ -286,6 +345,19 @@ Tag
   character.
   
   See also: [](intro:how-to-play:how-to-read)
+
+Tension
+  The {term}`Game Mode` during a tense moment of the story in which the precise
+  ordering and timing of events and their consequences may have a substantial
+  impact on the moment's outcome.
+  
+  See also: {term}`Scene`, [](gameplay:time:tension), [](gameplay:tension).
+
+Wound
+  An injury sustained by a {term}`Character` due to {term}`Damage` that they
+  took.
+  
+  See also: [](characters:effects).
 
 #fear
   Tagged {term}`Effect`s are rooted in and/or feed off of the afflicted
