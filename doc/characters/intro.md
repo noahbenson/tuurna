@@ -60,14 +60,14 @@ the {{character}} has attained in all {{skills}} to which they have access. How
 
 (characters:stats:pools)=
 ### Pools: Exhaustible Resources
-A {term}`Pool` is a finite exhaustible resource that can be spent in order to
-achieve certain game objectives. If an {term}`Ability` or other rule states
-that the {term}`Character` using it spends a point from a {term}`Pool`, then
-the {term}`Character` must have at least 1 point in the stated {term}`Pool` or
-they are unable to use the ability. Most {term}`Pool`s can also be replenished
-in some way, often by spending {term}`Ellipsis Point`s during {term}`Ellipsis`.
-{term}`PC`s and {term}`Humanoid`s automatically have four {term}`Pool`s:
-{term}`Luck`, {term}`Stamina`, {term}`Sanity`, and {term}`Willpower`.
+A {{pool}} is a finite exhaustible resource that can be spent in order to
+achieve certain game objectives. If an {{ability}} or other rule states that
+the {{character}} using it spends a point from a {{pool}}, then the
+{{character}} must have at least 1 point in the stated {{pool}} or they are
+unable to use the ability. Most {{pools}} can also be replenished in some way,
+often by spending {{ellipsis points}} during {{ellipsis}}.  {{PCs}} and
+{{humanoids}} automatically have four {{pools}}: {{luck}}, {{stamina}},
+{{sanity}}, and {{willpower}}.
 
 (characters:luck)=
 #### Luck: The Most General Pool
@@ -158,7 +158,7 @@ point of {{willpower}} that would have been lost.
 A {{character}}'s {{faculties}} represent their physical and mental parts of
 their body and mind that they can engage to perform actions in the world. Each
 {{faculty}} is a permanent component of the {{character}} that can be
-{{occupied}} to accomplish something or {term}`wounded<Wound>` by {{damage}}.
+{{occupied}} to accomplish something or {{wounded}} by {{damage}}.
 
 Many {{abilities}} require the use of one or more {{faculties}} for some amount
 of time. For example, swinging a sword typically requires one to {{occupy}} at

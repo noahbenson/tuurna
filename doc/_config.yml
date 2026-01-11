@@ -34,9 +34,8 @@ sphinx:
       figure: "Figure %s."
       table: "Table %s."
 
-#myst:
-#  enable_extensions:
-#    - substitution
+# Here, we define substitutions for all the glossary terms. These appear all
+# the time in the text so it's worth simplifying their formatting.
 parse:
   myst_enable_extensions:
     - substitution
@@ -281,6 +280,8 @@ parse:
     Wounds: "{term}`Wounds<Wound>`"
     wound: "{term}`wound<Wound>`"
     wounds: "{term}`wounds<Wound>`"
+    Wounded: "{term}`Wounded<Wound>`"
+    wounded: "{term}`wounded<Wound>`"
     arm_icon: "&#x270B;"
     arms_icon: "&#x1F64C;"
     attention_icon: "&#x1F441;"
