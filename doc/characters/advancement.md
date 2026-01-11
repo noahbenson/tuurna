@@ -1,11 +1,11 @@
 (characters:advancement)=
 # Character Advancement
 
-Over the course of a {{campaign}}, {{player characters}} are expected
+Over the course of a {{campaign}}, {{player_characters}} ({{PCs}}) are expected
 to grow and develop in knowledge, depth, and power. A substantial part of this
 growth occurs through advancement of the {{campaign}}'s story, such as when
-the {{pcs}} discovery a secret or develop a relationship with an
-{{npc}}. Additionally, the advancement of a {{pc}}'s potential is
+the {{PCs}} discovery a secret or develop a relationship with an
+{{NPC}}. Additionally, the advancement of a {{PC}}'s potential is
 represented by the advancement of their {{skill}} {{levels}}.
 
 Advancement can occur in a number of ways during a {{campaign}}. The most

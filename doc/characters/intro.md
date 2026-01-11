@@ -65,7 +65,7 @@ achieve certain game objectives. If an {{ability}} or other rule states that
 the {{character}} using it spends a point from a {{pool}}, then the
 {{character}} must have at least 1 point in the stated {{pool}} or they are
 unable to use the ability. Most {{pools}} can also be replenished in some way,
-often by spending {{ellipsis points}} during {{ellipsis}}.  {{PCs}} and
+often by spending {{ellipsis_points}} during {{ellipsis}}.  {{PCs}} and
 {{humanoids}} automatically have four {{pools}}: {{luck}}, {{stamina}},
 {{sanity}}, and {{willpower}}.
 

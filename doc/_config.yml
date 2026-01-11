@@ -39,6 +39,7 @@ sphinx:
 parse:
   myst_enable_extensions:
     - substitution
+    - colon_fence
   myst_substitutions:
     Ability: "{term}`Ability`"
     Abilities: "{term}`Abilities<Ability>`"
@@ -68,6 +69,10 @@ parse:
     beats: "{term}`beats<Beat>`"
     Breath: "{term}`Breath`"
     breath: "{term}`breath<Breath>`"
+    Campaign: "{term}`Campaign`"
+    Campaigns: "{term}`Campaigns<Campaign>`"
+    campaign: "{term}`campaign<Campaign>`"
+    campaigns: "{term}`campaigns<Campaign>`"
     Caustic: "{term}`Caustic<Caustic Damage>`"
     caustic: "{term}`caustic<Caustic Damage>`"
     Caustic_damage: "{term}`Caustic damage<Caustic Damage>`"
@@ -142,6 +147,10 @@ parse:
     Ellipsis_points: "{term}`Ellipsis points<Ellipsis Point>`"
     ellipsis_point: "{term}`ellipsis point<Ellipsis Point>`"
     ellipsis_points: "{term}`ellipsis points<Ellipsis Point>`"
+    Exceptional_point: "{term}`Exceptional point<Exceptional Point>`"
+    Exceptional_points: "{term}`Exceptional points<Exceptional Point>`"
+    exceptional_point: "{term}`exceptional point<Exceptional Point>`"
+    exceptional_points: "{term}`exceptional points<Exceptional Point>`"
     Experience: "{term}`Experience`"
     Experiences: "{term}`Experiences<Experience>`"
     experience: "{term}`experience<Experience>`"

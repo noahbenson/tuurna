@@ -4,7 +4,7 @@ This glossary contains definitions of game terms. Game terms are linked to
 their glossary entries and should be understood according to this glossary
 rather than their conventional English definition.
 
-```{glossary}
+:::{glossary}
 Ability
   Any feature granted to a {term}`Character` by a {term}`Skill`. Typically,
   each {term}`Skill` grants some number of {term}`Abilities<Ability>` at
@@ -78,7 +78,8 @@ Caustic Damage
   {term}`Damage` caused to a {term}`Character` caused by chemistry or chemical
   changes including fire, acid, and friction.
   
-  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  See also: {term}`Wound`, {term}`Damage`,
+  [](characters:effects:wounds:damage),
   [](characters:effects:wounds:damage:caustic).
 
 Check
@@ -125,12 +126,6 @@ Circumstantial Modifier
   See also: [Rolls](gameplay:rolls), {term}`Labor`, {term}`Leverage`,
   {term}`Modifier`, {term}`Specific Modifier`.
 
-Cold Damage
-  {term}`Damage` caused to a {term}`Character` by freezing cold.
-  
-  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
-  [](characters:effects:wounds:damage:cold).
-
 Competency Check
   A {term}`Skill` {term}`Check` to determine whether one can successfully use
   a particular {term}`Ability`. For a given {term}`Ability`, the
@@ -163,14 +158,16 @@ Crushing Damage
   {term}`Damage` caused to a {term}`Character` by blunt force such as due to
   fists, mauls, clubs, staves, or heavy objects.
   
-  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  See also: {term}`Wound`, {term}`Damage`,
+  [](characters:effects:wounds:damage),
   [](characters:effects:wounds:damage:crushing).
 
 Cutting Damage
   {term}`Damage` caused to a {term}`Character` by sharp weapons such as swords,
   claws, rapiers, or talons.
   
-  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  See also: {term}`Wound`, {term}`Damage`,
+  [](characters:effects:wounds:damage),
   [](characters:effects:wounds:damage:cutting).
 
 Damage
@@ -455,7 +452,8 @@ Psychic Damage
   {term}`Damage` caused to a {term}`Character` by mental attacks or psychic
   stress.
   
-  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  See also: {term}`Wound`, {term}`Damage`,
+  [](characters:effects:wounds:damage),
   [](characters:effects:wounds:damage:psychic).
 
 Sanity
@@ -500,8 +498,8 @@ Specific Modifier
 
 Stamina
   One of a {term}`Character`'s {term}`Pool`s, representing the overall level of
-  energy contained in their physical body.  {term}`Stamina` is primarily used to
-  empower certain physical {term}`Abilities<Ability>`.
+  energy contained in their physical body.  {term}`Stamina` is primarily used
+  to empower certain physical {term}`Abilities<Ability>`.
   
   See also: [](characters:stamina).
 
@@ -576,7 +574,8 @@ Wasting Damage
   {term}`Damage` caused to a {term}`Character` by an internal loss of strength
   such as bleeding, sickness, or poison.
   
-  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  See also: {term}`Wound`, {term}`Damage`,
+  [](characters:effects:wounds:damage),
   [](characters:effects:wounds:damage:wasting).
 
 Willpower
@@ -595,4 +594,4 @@ Wound
 #fear
   Tagged {term}`Effect`s are rooted in and/or feed off of the afflicted
   {term}`Character`'s fears.
-```
+:::
