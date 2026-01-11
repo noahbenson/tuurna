@@ -26,17 +26,21 @@ bones or an improvement in their balance.
 * - Level
   - Description
 * - 1
-  - **Recover**. When you rest, your wounds gradually recover. During ellipsis,
-    you may spend 1 ellipsis point to remove a single level 1 wound or to
-    reduce a wound of level 2 or higher by one level. This can only be used on
-    a wound of level 2 or higher if you do not already have a wound of the
-    reduced level.
+  - **Recover**. {term}`Ellipsis`: 1 {term}`Ellipsis Point`. When you rest,
+    your wounds gradually recover. You may either remove a single {term}`Wound`
+    of {term}`Severity` 1 or reduce a {term}`Wound` of {term}`Severity` 2 or
+    higher by one {term}`Severity` level. Reducing a {term}`Wound`'s
+    {term}`Severity` can only be used on a {term}`Wound` of {term}`Severity` 2
+    or higher if you do not already have a {term}`Wound` of the reduced
+    {term}`Severity`, and you must succeed on a Fitness {term}`Check` whose
+    {term}`Difficulty` is equal to the {term}`Wound`'s unreduced
+    {term}`Severity` to do so.
 * - 2
   - 
 * - 3
-  - **Lesser Endurance**. At the end of a {term}`Scene`, you may shrug off a
-    {term}`Severity` 1 {term}`Wound`. Once you have used this {term}`Ability`,
-    you may not do so again until the next {term}`Chapter`.
+  - **Lesser Endurance**. {term}`Passive`. At the end of a {term}`Scene`, you
+    may shrug off a {term}`Severity` 1 {term}`Wound`. Once you have used this
+    {term}`Ability`, you may not do so again until the next {term}`Chapter`.
 * - 4
   - **Health**. When you roll **Toughness** against wasting damage, you may 
     add 1 to the outcome.
@@ -106,7 +110,9 @@ bones or an improvement in their balance.
 * - Level
   - Description
 * - 1
-  - 
+  - **Exertion**. {term}`Active`: `A`. You spend 1 {term}`Willpower` either
+    in place of 1 {term}`Stamina` used during the current {term}`Beat` or to
+    create 1 {term}`Stamina`, assuming your {term}`Stamina is not already full.
 * - 2
   -
 * - 3
@@ -209,7 +215,7 @@ bones or an improvement in their balance.
 * - Level
   - Description
 * - 1
-  - 
+  -
 * - 2
   -
 * - 3
@@ -243,7 +249,7 @@ bones or an improvement in their balance.
 * - Level
   - Description
 * - 1
-  - 
+  -
 * - 2
   -
 * - 3
@@ -277,7 +283,9 @@ bones or an improvement in their balance.
 * - Level
   - Description
 * - 1
-  - 
+  - **Rest**. {term}`Active`. During {term}`Ellipsis`, you may spend one
+    {term}`Ellipsis Point` to gain 5 {term}`Stamina` up to your maximum
+    {term}`Stamina`.
 * - 2
   -
 * - 3
@@ -303,10 +311,10 @@ bones or an improvement in their balance.
 ```
 
 
-(skills:core:communication)=
-## Communication
+(skills:core:harmony)=
+## Harmony
 
-```{list-table} Communication Skill Levels
+```{list-table} Harmony Skill Levels
 :header-rows: 1
 
 * - Level
@@ -337,10 +345,10 @@ bones or an improvement in their balance.
   -
 ```
 
-(skills:core:charisma)=
-### Charisma
+(skills:core:communication)=
+### Communication
 
-```{list-table} Charisma Skill Levels
+```{list-table} Communication Skill Levels
 :header-rows: 1
 
 * - Level
@@ -406,9 +414,9 @@ bones or an improvement in their balance.
 ```
 
 (skills:core:insight)=
-### Insight
+### Empathy
 
-```{list-table} Insight Skill Levels
+```{list-table} Empathy Skill Levels
 :header-rows: 1
 
 * - Level

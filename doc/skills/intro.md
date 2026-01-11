@@ -93,7 +93,7 @@ approximately how skill levels should be interpreted.
   - expert
   - The character succeeds slightly less than half the time at {term}`Check`s
      of {term}`Difficulty` 6 (challenging) and about one time in four at
-     {term}`Difficulty` 7 (difficult), but typically succeeds on easier tasks.
+n     {term}`Difficulty` 7 (difficult), but typically succeeds on easier tasks.
 * - 7
   - virtuoso
   - The character succeeds slightly less than half the time at {term}`Check`s
@@ -129,25 +129,78 @@ approximately how skill levels should be interpreted.
 ### Abilities: the Elements of Skills
 
 As a {term}`Character` advances their {term}`Level` in a particular
-{term}`Skill`, they may gain subskills called {term}`Abilities<Ability>`. While
-not every {term}`Level` of every {term}`Skill` contains distinct
-{term}`Abilities<Ability>`, most contain at least one. A {term}`Character` may
-attempt to use any {term}`Ability` for which they have attained the
-{term}`Ability`'s {term}`Level` in its associated {term}`Skill`.
+{term}`Skill`, they may gain subskills called
+{term}`Abilities<Ability>`. {term}`Abilities<Ability` are said to be of a given
+{term}`Level` when they are listed at that {term}`Level`. While not every
+{term}`Level` of every {term}`Skill` contains distinct
+{term}`Abilities<Ability>`, most contain at least one.
 
-Most {term}`Abilities<Ability>` can only be used under certain
+All {term}`Abilities<Ability>` fall into one of three categories, which are
+listed immediately after their {term}`Ability` names in the relevant
+{term}`Skill` document: {term}`Passive`, {term}`Active`, and
+{term}`Ellipsis`. {term}`Passive` {term}`Abilities<Ability>` describe their
+{term}`Effect`s, and these {term}`Effect`s always apply to any
+{term}`Character` who has attained the {term}`Ability`'s {term}`Level` in the
+relevant {term}`Skill`.  {term}`Active` {term}`Abilities<Ability>` must be
+explicitly {term}`Activated<Activate>` by the {term}`Character` during a
+{term}`Scene` or {term}`Tension`, and their description includes any relevant
+requirements such as the circumstances under which the {term}`Ability` can be
+used and the {term}`Asset` usage of the {term}`Activation<Activate>`.
+{term}`Ellipsis` {term}`Abilities<Ability>` can be used only during
+{term}`Ellipsis`, and their descriptions list their requirements. The cost of
+an {term}`Ellipsis` ability in {term}`Ellipsis Point`s is always provided
+immediately after the "{term}`Ellipsis`" tag that follows the {term}`Ability`'s
+name in the relevant {term}`Skill` document.
+
+Most {term}`Active` {term}`Abilities<Ability>` can only be used under certain
 circumstances. Some {term}`Skill`s place restrictions on their use that are
 explained in their descriptions; such restrictions apply to all
 {term}`Abilities<Ability>` of the {term}`Skill`. Each {term}`Ability`'s
 description can also contains additional rules about when and how it can be
-used. In particular, some {term}`Abilities<Ability>` are described as
-{term}`Ellipsis Abilities<Ellipsis Ability>`. These abilities can be used
-during {term}`Ellipsis`. Similarly, if an {term}`Ability` is described as a
-{term}`Scene Ability`, then it can be used during a {term}`Scene`.
-{term}`Abilities<Ability>` that can be used during either {term}`Ellipsis` or
-{term}`Scene`s are considered both a {term}`Scene Ability` and an
-{term}`Ellipsis Ability`, and such a {term}`Ability`'s description will contain
-two sections describing their use each {term}`Ability` type.
+used. Most {term}`Active` {term}`Abilities<Ability>` require a small amount of
+activity on the party of the {term}`PC`; for example, in order to hit a target
+with a sword, one must first spend a bit of activity swinging a sword. During
+{term}`Tension`, these brief activities are tracked explicitly. The activity
+requirements of each {term}`Active` {term}`Ability` are represented by some of
+the {term}`PC`'s {term}`Asset`s being occupied for some number of
+{term}`Beat`s; these occupancy requirements are listed in code-block format
+(i.e., `code-block format`) immediately after the keyword {term}`Active`, which
+follows the {term}`Ability` name. The {term}`Asset` requirements use the
+following code:
+* `A` indicates that 1 {term}`Attention` is required for 1 {term}`Beat`.
+* `H` indicates that 1 {term}`Hand` is required for 1 {term}`Beat`.
+* `F` indicates that 1 {term}`Feet` is required for 1 {term}`Beat`.
+* `V` indicates that 1 {term}`Voice` is required for 1 {term}`Beat`.
+* `L` indicates that the {term}`Character` is required to engage their
+  {term}`Link` for 1 {term}`Beat`; their {term}`Link` may apply its own rules
+  to these instances.
+* `XY` indicates that both `X` and `Y` are required for 1 {term}`Beat`, where
+  `X` and `Y` can each be any of `AHFVL`. For example, `AV` indicates that an
+  activity requires 1 {term}`Attention` and 1 {term}`Voice` for 1 {term}`Beat`.
+  `HHL` indicates that 2 {term}`Hand`s are required and the {term}`Character`
+  must engage their {term}`Link` for 1 {term}`Beat`.
+* `X,Y` indicates that `X` is required for 1 {term}`Beat` followed by `Y` on
+  the subsequent {term}`Beat`. For example, `V,H` indicates that over the
+  course of 2 {term}`Beat`s, the {term}`Voice` {term}`Asset` is required on the
+  first {term}`Beat` alone and a {term}`Hand` alone is required on the second
+  {term}`Beat`. `A,AF` indicates that over 2 {term}`Beat`s, the
+  {term}`Attention` {term}`Asset` is required on both {term}`Beat`s and the
+  {term}`Feet` are additionally required on the second {term}`Beat`.
+* `NxX` indicates that `X` must be occupied for `N` {term}`Beat`s in a row.
+  For example, `3xA` is equivalent to `A,A,A`, indicating that one
+  {term}`Attention` must be occupied for 3 {term}`Beat`s in a row; `2xHHV` is
+  equivalent to `HHV,HHV`, indicating that both {term}`Hand`s and one's
+  {term}`Voice` {term}`Asset`s must be occupied for 2 {term}`Beat`s in a row.
+
+A {term}`Character` may attempt to use any {term}`Ability` for which they have
+attained the {term}`Ability`'s {term}`Level` in its associated
+{term}`Skill`. Additionally, at the {term}`Narrator`'s discretion, a
+{term}`Character` may attempt to use an {term}`Ability` of a {term}`Skill` for
+which they have not attaned the required {term}`Level`. In such cases, an
+additional roll called a {term}`Competency Check` is required. A
+{term}`Competency Check` for a given {term}`Ability` is just a {term}`Skill`
+n{term}`Check` whose {term}`Difficulty` is the {term}`Level` of the
+{term}`Ability` being attempted.
 
 
 (skills:access)=
@@ -184,3 +237,29 @@ under the normal rules of advancement. More information on skill advancement
 can be found in the [Advancement Section](characters:advancement) of the
 [Chapter on Characters](characters:intro).
 
+
+(skills:natural)=
+## Natural Abilities: Abilities without Skills
+
+In addition to the {term}`Abilities<Ability>` normally granted by
+{term}`Skill`s, there are a handful of {term}`Abilities<Ability>` that can be
+used by any {term}`Character` without any {term}`Skill` requirement. These
+{term}`Skill`s are considered innate to the {term}`Character`, thus they cannot
+be failed due to a {term}`Competency Check`.
+
+The {term}`Natural Abilities<Natural Ability>` are:
+* **Sleep**. {term}`Ellipsis`: 2&ndash;4 {term}`Ellipsis Point`s. You sleep for
+  a period, recovering 4 {term}`Stamina`, 2 {term}`Willpower`, and 2
+  {term}`Sanity` for each point spent. While sleeping, you are unconscious and
+  unaware of your surroundings.
+* **Rest**. {term}`Ellipsis`: 1 {term}`Ellipsis Point`. You rest for a short
+  period, recovering 2 {term}`Stamina`, 1 {term}`Willpower`, and 1
+  {term}`Sanity`.
+* **Meditate**. {term}`Ellipsis`: 1 {term}`Ellipsis Point`. You spend a short
+  period of time performing some ritual that is personally soothing or
+  meaningful to you, such as prayer, meditation, or art, recovering 1
+  {term}`Stamina`, 1 {term}`Willpower`, and 2 {term}`Sanity`.
+* **Relax**. {term}`Ellipsis`: 1 {term}`Ellipsis Point`. You spend a short
+  period of time passing time in a way that is relaxing and enjoyable to you,
+  such as playing cards, reading, or daydreaming, recovering 1 {term}`Stamina`,
+  2 {term}`Willpower`, and 1 {term}`Sanity`.

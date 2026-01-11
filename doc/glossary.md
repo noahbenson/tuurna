@@ -7,7 +7,44 @@ rather than their conventional English definition.
 ```{glossary}
 Ability
   Any feature granted to a {term}`Character` by a {term}`Skill`. Typically,
-  each {term}`Skill` grants some number of {term}`Abilities<Ability>`.
+  each {term}`Skill` grants some number of {term}`Abilities<Ability>` at
+  various {term}`Level`s. {term}`Abilities<Ability>` are either {term}`Active`
+  or {term}`Passive`.
+  
+  See also: {term}`Active`, {term}`Passive`, [](skills:levels:abilities).
+
+Activate
+  To explicitly use an {term}`Active` {term}`Ability`. Any {term}`Character`
+  who has the appropriate {term}`Level` in an {term}`Ability`'s {term}`Skill`
+  and who meets any requirements in the {term}`Ability`'s description can
+  {term}`Activate` the {term}`Ability` at the end of any {term}`Beat` on which
+  they meet all requirements.
+  
+  See also: {term}`Active`, {term}`Ability`, {term}`Passive`, 
+  [](skills:levels:abilities).
+
+Active
+  An {term}`Active` {term}`Ability` is an {term}`Ability` that can be
+  explicitly {term}`Activated<Activate>` by a {term}`Character` with the
+  relevant {term}`Level` in the {term}`Ability`'s {term}`Skill`.
+  
+  See also: {term}`Activate`, {term}`Ability`, [](skills:levels:abilities).
+
+Arm
+  One of a {term}`Character`'s {term}`Faculties<Faculty>` that represents the
+  {term}`Character`'s use of one of their hands and arms. A {term}`Character`'s
+  {term}`Arm` typically must be occupied whenever they manipulate objects or
+  make gestures. Most {term}`Humanoid` {term}`Character`s have two {term}`Arm`
+  {term}`Faculties<Faculty>` that each represent an arm and hand.
+  
+  See also: {term}`Faculty`, [](characters:faculties).
+
+Attention
+  One of a {term}`Character`'s {term}`Faculties<Faculty>` that represents the
+  {term}`Character`'s mental focus. Most {term}`Humanoid` {term}`Character`s
+  have two {term}`Attention`.
+  
+  See also: {term}`Faculty`, [](characters:faculties).
 
 Background
   A feature of a {term}`Character` that describes the character's history and
@@ -16,10 +53,33 @@ Background
   
   See also: [Backgrounds](backgrounds:intro).
 
+Beat
+  A single unit of time during {term}`Tension`. Four {term}`Beat`s make up a
+  single {term}`Round`.
+  
+  See also: {term}`Tension`, {term}`Round`, [](gameplay:tension).
+
+Breath
+  One of a {term}`Character`'s {term}`Faculties<Faculty>` that represents the
+  {term}`Character`'s use of one of their lungs and voice. A
+  {term}`Character`'s {term}`Breath` typically must be occupied whenever they
+  hold their breath, speak, sing, or exert themselves athletically.
+  Most {term}`Humanoid` {term}`Character`s have one {term}`Breath`
+  {term}`Faculty`.
+  
+  See also: {term}`Faculty`, [](characters:faculties).
+
 Campaign
   A sequence of {term}`Chapter`s of gameplay that comprise a single story arc.
   
   See also: {term}`Chapter`.
+
+Caustic Damage
+  {term}`Damage` caused to a {term}`Character` caused by chemistry or chemical
+  changes including fire, acid, and friction.
+  
+  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  [](characters:effects:wounds:damage:caustic).
 
 Check
   A narrative situation in which a {term}`Roll` is needed to adjudicate the
@@ -65,6 +125,20 @@ Circumstantial Modifier
   See also: [Rolls](gameplay:rolls), {term}`Labor`, {term}`Leverage`,
   {term}`Modifier`, {term}`Specific Modifier`.
 
+Cold Damage
+  {term}`Damage` caused to a {term}`Character` by freezing cold.
+  
+  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  [](characters:effects:wounds:damage:cold).
+
+Competency Check
+  A {term}`Skill` {term}`Check` to determine whether one can successfully use
+  a particular {term}`Ability`. For a given {term}`Ability`, the
+  {term}`Difficulty` of the {term}`Check` is equal to the {term}`Level` of the
+  {term}`Ability`.
+  
+  See also: [](skills:levels:abilities)
+
 Contest
   A type of {term}`Roll` in which two or more {term}`Character`s pit their
   abilities against each other.
@@ -77,6 +151,20 @@ Core Skill
   with a {term}`Level` of at least 1 in all {term}`Core Skill`s.
   
   See also: [The Core Skills](skills:list:core).
+
+Crushing Damage
+  {term}`Damage` caused to a {term}`Character` by blunt force such as due to
+  fists, mauls, clubs, staves, or heavy objects.
+  
+  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  [](characters:effects:wounds:damage:crushing).
+
+Cutting Damage
+  {term}`Damage` caused to a {term}`Character` by sharp weapons such as swords,
+  claws, rapiers, or talons.
+  
+  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  [](characters:effects:wounds:damage:cutting).
 
 Damage
   Harm caused to a {term}`Character` that is sufficient to cause lasting
@@ -132,6 +220,20 @@ Exceptional Point
   
   See also: [](characters:advancement).
 
+Experience
+  A {term}`Character`'s collected permanent skill, as represented by the
+  {term}`Level`s attained in all of the {term}`Character`'s {term}`Skill`'s.
+  
+  See also: [](characters:stats:experience).
+
+Faculty
+  One of a {term}`Character`'s physical or mental components, the use of
+  which enable them to interact with the world. For {term}`Humanoid`
+  {term}`Character`s, the {term}`Faculties<Faculty>` are {term}`Hand`s,
+  {term}`Legs`, {term}`Attention`, and {term}`Breath`.
+  
+  See also: [](characters:stats:faculties).
+
 Fate
   The extent to which circumstances favor or disfavor the outcome of a
   {term}`Roll`. The {term}`Fate` of a {term}`Roll` may be one of Cursed,
@@ -165,7 +267,7 @@ Humanoid
   {term}`Core Skill`s and all of the {term}`Mundane Skill`s. All {term}`PC`s
   are {term}`Humanoid`.
   
-  See also: {term}`Nonhumanoid`, [](characters:intro:npcs).
+  See also: {term}`Nonhumanoid`, [](characters:intro).
 
 Item
   A physical object with a weight, size, sturdiness, and structure.
@@ -183,6 +285,15 @@ Labor
   
   See also: [Contest](gameplay:rolls:contests),
   [Roll Modifiers: Leverage and Labor](gameplay:rolls:modifiers)
+
+Legs
+  One of a {term}`Character`'s {term}`Faculties<Faculty>` that represents the
+  {term}`Character`'s use of their legs and feet. A {term}`Character`'s
+  {term}`Legs` typically must be occupied to move around, maintain balance,
+  kick, etc.  Most {term}`Humanoid` {term}`Character`s have one {term}`Legs`
+  {term}`Faculty` that represents both legs and feet.
+  
+  See also: {term}`Faculty`, [](characters:faculties).
 
 Level
   A {term}`Character`'s ability with a particular {term}`Skill` as represented
@@ -205,6 +316,29 @@ Leverage
   See also: [The Rules of a Roll](gameplay:rolls),
   [Roll Modifiers: Leverage and Labor](gameplay:rolls:modifiers).
 
+Link
+  The means by which a {term}`Character` accesses the supernatural.
+  {term}`Link`s can be thought of as mental or magical crutches or tools that
+  one uses to access magic. For example, some mages may chant magic words, a
+  verbal {term}`Link`, while others may make magical gestures, a somatic
+  {term}`Link`.
+  
+  A {term}`Character`'s {term}`Link` describes the rules for accessing magic.
+  Whenever an {term}`Ability` uses the &#x2728; icon in its
+  {term}`Faculties<Faculty>` section, this indicates that the
+  {term}`Character`'s {term}`Link` must be engaged. Each {term}`Link` describes
+  its own rules for this engagement in the [chapter](skills:path) on 
+  {term}`Path Skill`s.
+  
+  See also: [](skills:path).
+
+Luck
+  One of a {term}`Character`'s {term}`Pool`s, representing the amount of luck
+  they currently have. {term}`Luck` is primarily used to mitigate a
+  {term}`Character`'s {term}`Damage` but has other uses as well.
+  
+  See also: [](characters:luck).
+
 Modifier
   A {term}`Modifier` refers to either {term}`Labor` or {term}`Leverage`, each
   of which affect the {term}`Score` of a particular {term}`Roll` by a
@@ -225,6 +359,14 @@ Narrator
   adjudicator of the game. The Narrator is not considered a {term}`Player` in
   game terms.
 
+Natural Ability
+  An {term}`Ability` that is not directly tied to a {term}`Skill` and that is
+  available to all {term}`Character`s that meet the requirements listed in the
+  {term}`Ability`'s description, if any.  {term}`Competency Check`s for 
+  {term}`Natural Abilities<Natural Ability>` always succeed.
+  
+  See also: {term}`Ability`, {term}`Competency Check`, [](skills:natural).
+
 Nonhumanoid
   An {term}`NPC` that is neither human nor sufficiently human-like in its
   physical and mental characteristics. All {term}`NPC`s are either
@@ -234,7 +376,7 @@ Nonhumanoid
   goblins. All {term}`Nonhumanoid`s have access to all of the
   {term}`Core Skill`s.
   
-  See also: {term}`Humanoid`, [](characters:intro:npcs).
+  See also: {term}`Humanoid`, [](characters:intro).
 
 NPC
   An abbreviation of {term}`Nonplayer Character`; often abbreviated
@@ -244,6 +386,16 @@ Nonplayer Character
   Any {term}`Character` that is controlled by the {term}`Narrator`, often
   abbreviated {term}`NPC`. {term}`NPC`s are further subdivided into
   {term}`Humanoid` and {term}`Nonhumanoid` {term}`NPC`s.
+
+Passive
+  A {term}`Passive` {term}`Ability` is an {term}`Ability` that cannot be
+  explicitly {term}`Activated<Activate>`. The description of each
+  {term}`Passive` {term}`Ability` describes its {term}`Effect`s, and any
+  {term}`Character` with the required {term}`Level` in the {term}`Ability`'s
+  {term}`Skill` is always affected by them.
+  
+  See also: {term}`Active`, {term}`Ability`, [](skills:levels:abilities).
+
 
 Path Skill
   The subset of {term}`Skill`s that all {term}`Player Character`s (and some
@@ -263,12 +415,34 @@ Player Character
   Any {term}`Character` that is controlled by one of the {term}`Player`s; often
   abbreviated {term}`PC`.
 
+Pool
+  Any finite exhaustible resource tracked by a {term}`Character. All
+  {term}`PC`s have four {term}`Pool`s: {term}`Luck`, {term}`Stamina`,
+  {term}`Sanity`, and {term}`Willpower`.
+  
+  See also: [](characters:stats:pools).
+
 Practical Skill
   A {term}`Skill` on which a {term}`Fundamental Skill` depends. 
   {term}`Practical Skill`s represent specific subdomains of their 
   {term}`Fundamental Skill`s.
   
   See also: [](skills:hierarchy), {term}`Fundamental Skill`.
+
+Psychic Damage
+  {term}`Damage` caused to a {term}`Character` by mental attacks or psychic
+  stress.
+  
+  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  [](characters:effects:wounds:damage:psychic).
+
+Sanity
+  One of a {term}`Character`'s {term}`Pool`s, representing the overall health
+  and strength of their conceptualization of the world and mental state.
+  {term}`Sanity` is primarily used to empower certain mental
+  {term}`Abilities<Ability>`.
+  
+  See also: [](characters:sanity).
 
 Score
   When a {term}`Character` makes a {term}`Roll`, their {term}`Score` at the
@@ -297,6 +471,13 @@ Specific Modifier
   See also: [Rolls](gameplay:rolls), {term}`Labor`, {term}`Leverage`,
   {term}`Modifier`, {term}`Circumstantial Modifier`.
 
+Stamina
+  One of a {term}`Character`'s {term}`Pool`s, representing the overall level of
+  energy contained in their physical body.  {term}`Stamina` is primarily used to
+  empower certain physical {term}`Abilities<Ability>`.
+  
+  See also: [](characters:stamina).
+
 Supernatural Potential
   A {term}`Character` with Supernatural Potential in a {term}`Skill` may
   achieve a {term}`Score` as high as 12 when they make a {term}`Roll` using
@@ -305,11 +486,16 @@ Supernatural Potential
   See also: [Rolls](gameplay:rolls)
 
 Roll
-  An adjudication of an game event using dice. All rolls follow a particular
+  An adjudication of a game event using dice. All rolls follow a particular
   formula based on the kind of event being adjudicated. For more information,
   see the gameplay section on [rolls](gameplay:rolls).
   
   See also: [Rolls](gameplay:rolls)
+
+Round
+  A unit of time during {term}`Tension` consisting of four {term}`Beat`s.
+  
+  See also: {term}`Tension`, {term}`Beat`, [](gameplay:tension).
 
 Scene
   The fundamental unit of game time during gameplay. {term}`Scene`s are periods
@@ -352,6 +538,20 @@ Tension
   impact on the moment's outcome.
   
   See also: {term}`Scene`, [](gameplay:time:tension), [](gameplay:tension).
+
+Wasting Damage
+  {term}`Damage` caused to a {term}`Character` by an internal loss of strength
+  such as bleeding, sickness, or poison.
+  
+  See also: {term}`Wound`, {term}`Damage`, [](characters:effects:wounds:damage),
+  [](characters:effects:wounds:damage:wasting).
+
+Willpower
+  One of a {term}`Character`'s {term}`Pool`s, representing the overall level of
+  mental energy available to them.  {term}`Willpower` is primarily used to
+  empower certain mental {term}`Abilities<Ability>`.
+  
+  See also: [](characters:willpower).
 
 Wound
   An injury sustained by a {term}`Character` due to {term}`Damage` that they
