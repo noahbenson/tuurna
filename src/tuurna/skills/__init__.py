@@ -17,20 +17,17 @@ More information can be found in the documentation for the ``skills.Fate``,
 from ._core import (
     Fate,
     Level,
-    Skill,
     Difficulty,
-    skills,
     to_level,
-    to_skill,
     to_fate,
-    to_difficulty)
+    to_difficulty,
+    rolldist)
 
 Fate.__module__ = __name__
 Level.__module__ = __name__
-Skill.__module__ = __name__
 Difficulty.__module__ = __name__
 to_level.__module__ = __name__
-to_skill.__module__ = __name__
 to_fate.__module__ = __name__
 to_difficulty.__module__ = __name__
+rolldist.__module__ = __name__
 

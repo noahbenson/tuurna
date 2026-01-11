@@ -157,6 +157,35 @@ Level.by_value = {
     12: Level(12, 'godlike')}
 Level.by_name = {l.name: l for l in Level.by_value.values()}
 
+# Difficulty
+# Difficulty -----------------------------------------------------------------
+DifficultyData = namedtuple(
+    'DifficultyData',
+    ('value', 'name'))
+class Difficulty(DifficultyData):
+    """A description of a difficulty level.
+    
+    Each difficulty level has an integer value between 0 and
+    ``Difficulty.maximum`` and a name describing the difficulty.
+    """
+    minimum = 0
+    maximum = 10
+    by_value = {}
+    by_name = {}
+    __slots__ = ()
+Difficulty.by_value = {
+    1:  Difficulty(1,  'trivial'),
+    2:  Difficulty(2,  'very easy'),
+    3:  Difficulty(3,  'easy'),
+    4:  Difficulty(4,  'mundane'),
+    5:  Difficulty(5,  'moderate'),
+    6:  Difficulty(6,  'challenging'),
+    7:  Difficulty(7,  'difficult'),
+    8:  Difficulty(8,  'very difficult'),
+    9:  Difficulty(9,  'nearly impossible'),
+    10: Difficulty(10, 'impossible')}
+Difficulty.by_name = {d.name: d for d in Difficulty.by_value.values()}
+
 
 # Functions ##################################################################
 
@@ -174,11 +203,11 @@ def to_level(obj):
         return obj
     try:
         return Level.by_name[obj]
-    except KeyError:
+    except (KeyError, TypeError):
         pass
     try:
         return Level.by_value[int(obj)]
-    except KeyError:
+    except (KeyError, TypeError):
         pass
     raise ValueError(f"cannot find level matching object of type {type(obj)}")
 def to_fate(obj):
@@ -191,14 +220,52 @@ def to_fate(obj):
     it is converted into an integer; if that integer is outside the range of
     a valid fate, a ``ValueError`` is raised.
     """
-    if isinstance(obj, Level):
+    if isinstance(obj, Fate):
         return obj
     try:
         return Fate.by_name[obj]
-    except KeyError:
+    except (KeyError, TypeError):
         pass
     try:
         return Fate.by_value[int(obj)]
-    except KeyError:
+    except (KeyError, TypeError):
         pass
-    raise ValueError(f"cannot find fate matching object of type {type(obj)}")
+    raise ValueError(
+        f"cannot find fate matching object of type {type(obj)}")
+def to_difficulty(obj):
+    """Coerces the argument to a skill ``Difficulty`` object and returns it.
+
+    If the object cannot be converted into a valid difficulty, then a
+    ``TypError` is raised.
+    """
+    if isinstance(obj, Difficulty):
+        return obj
+    try:
+        return Difficulty.by_name[obj]
+    except (KeyError, TypeError):
+        pass
+    try:
+        return Difficulty.by_value[int(obj)]
+    except (KeyError, TypeError):
+        pass
+    raise ValueError(
+        f"cannot find difficulty matching object of type {type(obj)}")
+
+
+# Rolls #######################################################################
+
+def rolldist(level, fate=Fate.neutral, diemax=10):
+    """Returns the probability of success of a skill-check.
+
+    Parameters
+    ----------
+    level : int
+        The level of the skill being tested. Skill levels must integers
+        between 0 and the max skill value (inclusive) or skill level names; see
+        the ``to_level`` function for more information.
+    """
+    level = to_level(level)
+    fate = to_fate(fate)
+    onedie = ip.d6.map(fate.mapping, again_depth=(diemax - 1))
+    alldice = onedie.pool(level.value).sum()
+    return alldice
