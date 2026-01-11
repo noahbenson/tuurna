@@ -1,49 +1,15 @@
----
-substitutions:
-   Ability: "{term}`Ability`"
-   Abilities: "{term}`Abilities<Ability>`"
-   ability: "{term}`ability<Ability>`"
-   abilities: "{term}`abilities<Ability>`"
-   Character: "{term}`Character`"
-   Characters: "{term}`Characters<Character>`"
-   character: "{term}`character<Character>`"
-   characters: "{term}`characters<Character>`"
-   Damage: "{term}`Damage`"
-   damage: "{term}`damage<Damage>`"
-   Damage type: "{term}`Damage type<Damage Type>`"
-   Damage types: "{term}`Damage types<Damage Type>`"
-   damage type: "{term}`damage type<Damage Type>`"
-   damage types: "{term}`damage types<Damage Type>`"
-   Faculty: "{term}`Faculty`"
-   Faculties: "{term}`faculties<Faculty>`"
-   faculty: "{term}`faculty<Faculty>`"
-   faculties: "{term}`faculties<Faculty>`"
-   Humanoid: "{term}`Humanoid`"
-   Humanoids: "{term}`Humanoids<Humanoid>`"
-   humanoid: "{term}`humanoid<Humanoid>`"
-   humanoids: "{term}`humanoids<Humanoid>`"
-   Nonhumanoid: "{term}`Nonhumanoid`"
-   Nonhumanoids: "{term}`Nonhumanoids<Nonhumanoid>`"
-   nonhumanoid: "{term}`nonhumanoid<Nonhumanoid>`"
-   nonhumanoids: "{term}`nonhumanoids<Nonhumanoid>`"
-   PC: "{term}`PC`"
-   PCs: "{term}`PCs<PC>`"
-   Resource: "{term}`Resource`"
-   Resources: "{term}`Resources<Resource>`"
-   resource: "{term}`resource<Resource>`"
-   resources: "{term}`resources<Resource>`"
-   Severity: "{term}`Severity`"
-   Severities: "{term}`Severities<Severity>`"
-   severity: "{term}`severity<Severity>`"
-   severities: "{term}`severities<Severity>`"
-   Wound: "{term}`Wound`"
-   Wounds: "{term}`Wounds<Wound>`"
-   wound: "{term}`wound<Wound>`"
-   wounds: "{term}`wounds<Wound>`"
----
-
 (characters:effects)=
 # Afflictions and Effects
+
+During gameplay, {{characters}} will inevitably be affected by various
+events. Some of these events may give the {{character}} a beneficial condition
+such as having confidence or increased dexterity while others will be negative
+or neutral, such as being injured or seated.
+
+{{Effects}} can be broadly categorized into two kinds: {{wounds}} and
+{{conditions}}. {{Wounds}} are the result of {{damage}} and are subject to
+special rules described in the next section. {{Conditions}} are other temporary
+changes to a {{character}}'s {{status}} that each follow their own rules.
 
 
 (characters:effects:wounds)=
@@ -56,22 +22,22 @@ whatever {{damage}} remains becomes a {{wound}}.
 
 {{Wounds}} are the semi-perminent afflictions to a {{character}} that result
 from {{damage}}. All {{wounds}} have a {{severity}} value between 1 and 5, a
-{{damage type}}, and a {{faculty}}. The rules for all of these data are
-descrined below.
+{{damage_type}}, and a {{faculty}}. The rules for all of these data are
+described below.
 
 ```{note}
-Multiple rules can apply when similar conditions are met, and conditions like
-"when a {{character}} takes {{damage}}" are among the most common conditions.
-When multiple rules apply to this kind of situation, the order in which the
-rules are resolved is up to the the {{character}} taking the {{damage}}.
+Multiple rules can simultaneously apply when similar conditions are met, and
+many rules usually apply "when a {{character}} takes {{damage}}".  When
+multiple rules apply to this kind of situation, the order in which the rules
+are resolved is up to the the {{character}} taking the {{damage}}.
 
 For example, suppose a {{humanoid}} {{character}} has an {{ability}} that
 allows them, *when they take {{damage}}*, to cut that {{damage}} in half. What
 happens if that {{character}} is dealt 6 {{damage}}?
 
 Two rules apply here: (1) when this {{character}} takes more than 5 {{damage}},
-hey die, and (2) when this {{character}} takes {{damage}}, they can cut it in
-half. If the rules are applied to the {{characger}} in that order, then the
+they die, and (2) when this {{character}} takes {{damage}}, they can cut it in
+half. If the rules are applied to the {{character}} in that order, then the
 {{character}} would die. If they are applied in the reverse order, the
 {{character}} would live. 
 
@@ -82,24 +48,49 @@ evaluate whether it will kill them.
 (characters:effects:wounds:locations)=
 ### Wound Locations
 Each {{wound}} to a {{humanoid}} {{character}} occurs in a specific location
-represented by one of the {{character}}'s {{faculties}}. 
+represented by one of the {{character}}'s {{faculties}}. When a {{character}}
+receives a {{wound}}, roll a d6 and assign the {{wound}} to one of the
+{{character}}'s {{faculties}} according to the table below. A {{character}} may
+have multiple {{wounds}} on the same {{faculty}}, but they cannot have multiple
+{{wounds}} of the same {{severity}}.
+
+```{list-table} Wound Locations
+:header-rows: 1
+
+* - Die Roll
+  - {{Wound}} Location
+* - 1
+  - {{Attention}} ({{eye_icon}})
+* - 2
+  - {{Attention}} ({{eye_icon}})
+* - 3
+  - {{Breath}} ({{lungs_icon}})
+* - 4
+  - {{Arm}} ({{arm_icon}})
+* - 5
+  - {{Arm}} ({{arm_icon}})
+* - 6
+  - {{Legs}} ({{legs_icon}})
+```
 
 (characters:effects:wounds:severity)=
 ### Wound Severity
-Each kind of {{wound}} has five levels of {{severity}}: 1 (trivial) through 5
-(critical). When a {{character}} takes {{damage}}, 
+Each {{wound}} has a {{severity}} rating: 1 (trivial) through 5 (critical). When a
+{{character}} takes {{damage}}, they gain a {{wound}} whose severity is equal
+to the amount of {{damage}} taken. If a {{character}} ever takes more than 5
+{{damage}} at once, they die.
 
-Each {{character}} can only have one {{wound}} of each {{severity}} at a time; if a {{character}} already has a {{wound}} of the {{severity}} equal to the takes {{damage}} 
+Each {{character}} can only have one {{wound}} of each {{severity}} at a time;
+if a {{character}} already has a {{wound}} of the {{severity}} equal to the
+taken {{damage}}, then they instead receive a {{wound}} of the next highest
+{{severity}} for which they do not aleady have a {{wound}}. If a {{character}}
+every takes more than 5 {{damage}}, or if they take 1&ndash;5 {{damage}} but
+already have {{wounds}} of that {{severity}} and every higher {{severity}},
+then the {{character}} dies.
 
-If a
-{{humanoid}} {{character}} takes more than 5 {{damage}}, they die. Otherwise,
-they receive a {{wound}} whose {{severity}} is greater than or equal to the
-{{damage}} taken. If the {{character}} has no existing {{wound}} of the
-required {{severity}}, then they receive a {{wound}} of that {{severity}}. If
-they already have a {{wound}} of that {{severity}} then they instead receive a
-{{wound}} of the next highest {{severity}} for which they do not already have a
-{{wound}}. If {{humanoid}} {{character}} already has {{wounds}} of all higher
-{{severities}}, then they die.
+Each {{wound}} whose {{severity}} is greater than 1 causes the {{character}}
+some kind of disadvantage when they {{occupy}} the injured {{faculty}}. Those
+disadvantages are detailed in the following table.
 
 
 ```{list-table} Wound Severities
@@ -108,165 +99,63 @@ they already have a {{wound}} of that {{severity}} then they instead receive a
 * - Severity Level
   - Description
 * - 1
-  - A minor wound such as a scratch, a bruise, or a superficial burn.
-    {term}`Severity` 1 {{Wound}} cause no disability.
+  - A trivial wound such as a scratch, a bruise, or a superficial burn.
+    A {{severity}} 1 {{wound}} cause no disability.
 * - 2
-  - A moderate wound such as a deep slash or a badly bruised foot. A
-    {term}`Severity` 2 {term}`Wound` causes some minor disability.
+  - A minor wound such as a slashed arm or a bruised foot.
+    Whenever a {{character}} {{occupies}} a {{faculty}} with a {{severity}} 2
+    {{wound}}, they must make a {{competency_check}} at the end of the first
+    {{beat}} on which the {{faculty}} is occupied. On failure, the 
+    {{character}} fails immediately to {{activate}} the {{ability}}. The
+    {{competency_check}} is not made on subsequent beats of the
+    {term}`activation<Activate>`.
 * - 3
-  - A severe wound such as an impaling sword or a badly broken leg. A
-    {term}`Severity` 3 {term}`Wound` causes some significant disability .
+  - A moderate wound such as an deep cut or a sprained ankle. At the end of
+    every {{beat}} during which a {{faculty}} with a {{severity}} 3 {{wound}}
+    is {{occupied}}, the {{character}} must make a {{competency_check}}. On
+    failure, the {{character}} fails immediately to {{activate}} the
+    {{ability}}.
 * - 4
-  - A critical wound such as a severed hamstring or a severed limb. A
-    {term}`Severity` 4 {term}`Wound` causes some permanent disability.
+  - A severe wound such as large third degree burns or a badly broken arm. At
+    the end of every {{beat}} during which a {{faculty}} with a {{severity}} 4
+    {{wound}} is {{occupied}}, the {{character}} must make a
+    {{competency_check}} with a {{leverage}} of -1. On failure, the
+    {{character}} fails immediately to {{activate}} the {{ability}}.
 * - 5
-  - A mortal wound. A {term}`Character` that gains a {term}`Severity` 5
-    {term}`Wound` dies at the end of the current {term}`Round`.
+  - A critical wound. A {{character}} with a {{severity}} 5 {{wound}} cannot
+    {{occupy}} the wounded {{faculty}}.
 ```
 
-(characters:effects:wounds:locations)=
-### Wound Locations
-All {{wounds}} occur in a specific location.
-
 (characters:effects:wounds:damage-types)=
-### Damage Types
-Each kind of {term}`Wound` is associated with a specific kind of
-{term}`Damage`. Whenever a {term}`Humanoid` takes {term}`Damage`, they receive
-a {term}`Wound` whose {term}`Severity` is equal to the {term}`Damage`
-taken. {{Wound}} occur on specific {{Resources}} such as When a {term}`Character` receives a {term}`Wound`, the 
-
-There are five kinds of {term}`Damage`, each of which is described below.
+### Types of Damage
+Each kind of {{wound}} is associated with the kind of {{damage}} that caused
+it. There are {{damage_types}} that {{damage}} and {{wounds}} can take, each of
+which is described below. The {{damage_type}} does not have an effect on any
+disability caused by the {{wound}}, but 
 
 (characters:effects:wounds:damage:cutting)=
 #### Cutting Damage: Stabbing, Slashing, and Piercing
 {term}`Cutting Damage` is caused by slashing, piercing, or stabbing weapons
-such as swords, spears, and claws.
+such as swords, spears, claws, and teeth.
 
-```{list-table} Cutting Wounds
-:header-rows: 1
-
-* - Severity Level
-  - Description
-* - 1
-  - A minor cut or gash.
-* - 2
-  - A 
-* - 3
-  - 
-* - 4
-  - 
-* - 5
-  - 
-```
-
-(characters:effects:wounds:damage:crushing)
+(characters:effects:wounds:damage:crushing)=
 #### Crushing Damage: Bludgeoning, Pounding, and Slamming
 {term}`Crushing Damage` is caused by blunt trauma from bludegoning or smashing
 weapons such as fists, mauls, clubs, and falling rocks.
 
-```{list-table} Crushing Wounds
-:header-rows: 1
-
-* - Severity Level
-  - Description
-* - 1
-  - 
-* - 2
-  - 
-* - 3
-  - 
-* - 4
-  - 
-* - 5
-  - 
-```
-
-(characters:effects:wounds:damage:cold)
-#### Cold Damage: Ice, Frost, and Winter
-{term}`Cold Damage` is caused by freezing flesh due to exposure to cold.
-
-```{list-table} Cold Wounds
-:header-rows: 1
-
-* - Severity Level
-  - Description
-* - 1
-  - 
-* - 2
-  - 
-* - 3
-  - 
-* - 4
-  - 
-* - 5
-  - 
-```
-
-
-(characters:effects:wounds:damage:caustic)
+(characters:effects:wounds:damage:caustic)=
 #### Caustic Damage: Fire, Acid, and Friction
 {term}`Caustic Damage` is caused by chemical irritants of all forms including
-fire, acid, and friction.
+fire, acid, freezing, and friction.
 
-```{list-table} Caustic Wounds
-:header-rows: 1
-
-* - Severity Level
-  - Description
-* - 1
-  - 
-* - 2
-  - 
-* - 3
-  - 
-* - 4
-  - 
-* - 5
-  - 
-```
-
-
-(characters:effects:wounds:damage:wasting)
+(characters:effects:wounds:damage:wasting)=
 #### Wasting Damage: Weakness, Sickness, and Decay
 {term}`Wasting Damage` is caused by internal weakness, decay, or loss of
 strength such as due to bleeding, sickness, or poison.
 
-```{list-table} Wasting Wounds
-:header-rows: 1
-
-* - Severity Level
-  - Description
-* - 1
-  - 
-* - 2
-  - 
-* - 3
-  - 
-* - 4
-  - 
-* - 5
-  - 
-```
-
-
-(characters:effects:wounds:damage:psychic)
+(characters:effects:wounds:damage:psychic)=
 #### Psychic Damage: Attacks on Mental Stability, Sanity, and Morale
-{term}`Psychic Damage` is caused by telepathic/psionic mental attacks, loss of
-morale, and observations that shake one's sanity.
-
-```{list-table} Psychic Wounds
-:header-rows: 1
-
-* - Severity Level
-  - Description
-* - 1
-  - 
-* - 2
-  - 
-* - 3
-  - 
-* - 4
-  - 
-* - 5
-  - 
-```
+{{Psychic_damage}} is caused by telepathic/psionic mental attacks, loss of
+morale, and observations that shake one's sanity. A {{psychic}} {{wound}} might
+represent a character's loss of coordination with a particular {{faculty}} or
+loss of ability to control it.

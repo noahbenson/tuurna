@@ -1,142 +1,3 @@
----
-substitutions:
-   Ability: "{term}`Ability`"
-   Abilities: "{term}`Abilities<Ability>`"
-   ability: "{term}`ability<Ability>`"
-   abilities: "{term}`abilities<Ability>`"
-   Activate: "{term}`Activate`"
-   Activates: "{term}`Activates<Activate>`"
-   activate: "{term}`activate<Activate>`"
-   activates: "{term}`activates<Activate>`"
-   Arm: "{term}`Arm`"
-   Arms: "{term}`Arms<Arm>`"
-   arm: "{term}`arm<Arm>`"
-   arms: "{term}`arms<Arm>`"
-   Attention: "{term}`Attention`"
-   attention: "{term}`attention<Attention>`"
-   Background: "{term}`Background`"
-   Backgrounds: "{term}`Backgrounds<Background>`"
-   background: "{term}`background<Background>`"
-   backgrounds: "{term}`backgrounds<Background>`"
-   Beat: "{term}`Beat`"
-   Beats: "{term}`Beats<Beat>`"
-   beat: "{term}`beat<Beat>`"
-   beats: "{term}`beats<Beat>`"
-   Breath: "{term}`Breath`"
-   breath: "{term}`breath<Breath>`"
-   Character: "{term}`Character`"
-   Characters: "{term}`Characters<Character>`"
-   character: "{term}`character<Character>`"
-   characters: "{term}`characters<Character>`"
-   Core skill: "{term}`Core skill<Core Skill>`"
-   Core skills: "{term}`Core skills<Core Skill>`"
-   core skill: "{term}`core skill<Core Skill>`"
-   core skills: "{term}`core skills<Core Skill>`"
-   Domain skill: "{term}`Domain skill<Domain Skill>`"
-   Domain skills: "{term}`Domain skills<Domain Skill>`"
-   domain skill: "{term}`domain skill<Domain Skill>`"
-   domain skills: "{term}`domain skills<Domain Skill>`"
-   Effect: "{term}`Effect`"
-   Effects: "{term}`Effects<Effect>`"
-   effect: "{term}`effect<Effect>`"
-   effects: "{term}`effects<Effect>`"
-   Experience: "{term}`Experience`"
-   Experiences: "{term}`Experiences<Experience>`"
-   experience: "{term}`experience<Experience>`"
-   experiences: "{term}`experiences<Experience>`"
-   Faculty: "{term}`Faculty`"
-   Faculties: "{term}`Faculties<Faculty>`"
-   faculty: "{term}`faculty<Faculty>`"
-   faculties: "{term}`faculties<Faculty>`"
-   Humanoid: "{term}`Humanoid`"
-   Humanoids: "{term}`Humanoids<Humanoid>`"
-   humanoid: "{term}`humanoid<Humanoid>`"
-   humanoids: "{term}`humanoids<Humanoid>`"
-   Legs: "{term}`Legs`"
-   legs: "{term}`legs<Legs>`"
-   Level: "{term}`Level`"
-   Levels: "{term}`Levels<Level>`"
-   level: "{term}`level<Level>`"
-   levels: "{term}`levels<Level>`"
-   Leverage: "{term}`Leverage`"
-   leverage: "{term}`leverage<Leverage>`"
-   Link: "{term}`Link`"
-   Links: "{term}`Links<Link>`"
-   link: "{term}`link<Link>`"
-   links: "{term}`links<Link>`"
-   Luck: "{term}`Luck`"
-   luck: "{term}`luck<Luck>`"
-   Mundane skill: "{term}`Mundane skill<Mundane Skill>`"
-   Mundane skills: "{term}`Mundane skills<Mundane Skill>`"
-   mundane skill: "{term}`mundane Skill`"
-   mundane skills: "{term}`mundane skills<Mundane Skill>`"
-   Narrator: "{term}`Narrator`"
-   narrator: "{term}`narrator<Narrator>`"
-   Natural ability: "{term}`Natural Ability`"
-   Natural abilities: "{term}`Natural abilities<Natural Ability>`"
-   natural ability: "{term}`natural ability<Natural Ability>`"
-   natural abilities: "{term}`natural abilities<Natural Ability>`"
-   Nonhumanoid: "{term}`Nonhumanoid`"
-   Nonhumanoids: "{term}`Nonhumanoids<Nonhumanoid>`"
-   nonhumanoid: "{term}`nonhumanoid<Nonhumanoid>`"
-   nonhumanoids: "{term}`nonhumanoids<Nonhumanoid>`"
-   Nonplayer character: "{term}`Nonplayer character<Nonplayer Character>`"
-   Nonplayer characters: "{term}`Nonplayer characters<Nonplayer Character>`"
-   nonplayer character: "{term}`nonplayer character<Nonplayer Character>`"
-   nonplayer characters: "{term}`nonplayer characters<Nonplayer Character>`"
-   Occupy: "{term}`Occupy`"
-   Occupies: "{term}`Occupies<Occupy>`"
-   Occupied: "{term}`Occupied<Occupy>`"
-   occupy: "{term}`occupy<Occupy>`"
-   occupies: "{term}`occupies<Occupy>`"
-   occupied: "{term}`occupied<Occupy>`"
-   Path skill: "{term}`Path skill<Path Skill>`"
-   Path skills: "{term}`Path skills<Path Skill>`"
-   path skill: "{term}`path skill<Path Skill>`"
-   path skills: "{term}`path skills<Path Skill>`"
-   Player: "{term}`Player`"
-   Players: "{term}`Players<Player>`"
-   player: "{term}`player<Player>`"
-   players: "{term}`players<Player>`"
-   Player character: "{term}`Player character<Player Character>`"
-   Player characters: "{term}`Player characters<Player Character>`"
-   player character: "{term}`player character<Player Character>`"
-   player characters: "{term}`player characters<Player Character>`"
-   Pool: "{term}`Pool`"
-   Pools: "{term}`Pools<Pool>`"
-   pool: "{term}`pool<Pool>`"
-   pools: "{term}`pools<Pool>`"
-   Psychic damage: "{term}`Psychic damage<Psychic Damage>`"
-   psychic damage: "{term}`psychic damage<Psychic Damage>`"
-   NPC: "{term}`NPC`"
-   NPCs: "{term}`NPCs<NPC>`"
-   PC: "{term}`PC`"
-   PCs: "{term}`PCs<PC>`"
-   Sanity: "{term}`Sanity`"
-   sanity: "{term}`sanity<Sanity>`"
-   Scene: "{term}`Scene`"
-   Scenes: "{term}`Scenes<Scene>`"
-   scene: "{term}`scene<Scene>`"
-   scenes: "{term}`scenes<Scene>`"
-   Skill: "{term}`Skill`"
-   Skills: "{term}`Skills<Skill>`"
-   skill: "{term}`skill<Skill>`"
-   skills: "{term}`skills<Skill>`"
-   Stamina: "{term}`Stamina`"
-   stamina: "{term}`stamina<Stamina>`"
-   Status: "{term}`Status`"
-   status: "{term}`status<Status>`"
-   Willpower: "{term}`Willpower`"
-   willpower: "{term}`willpower<Willpower>`"
-   arm_icon: "&#x270B;"
-   arms_icon: "&#x1F64C;"
-   eye_icon: "&#x1F441;"
-   eyes_icon: "&#x1F440;"
-   breath_icon: "&#x1FAC1;"
-   legs_icon: "&#x1F463;"
-   link_icon: "&#x2728;"
-   x: "&#x2716;"
----
 (characters:intro)=
 # The Characters of Tu'urna
 
@@ -145,7 +6,7 @@ The cast of {{characters}} of Tu'urna encompasses the spectrum of creatures
 in the game world.
 
 The most critical distinction between {{characters}} in the game is that of
-{{player characters}} ({{PCs}}) versus {{nonplayer characters}} ({{NPCs}}).
+{{player_characters}} ({{PCs}}) versus {{nonplayer_characters}} ({{NPCs}}).
 {{PCs}} are the {{characters}} whose motivations and intentions are controlled
 by the {{players}}; {{NPCs}} are the {{characters}} controlled by the
 {{narrator}}.
@@ -179,11 +40,11 @@ Mechanically, {{humanoids}} consist of a few game statistics:
   {{willpower}}.
 * Their {{faculties}}: their physical and mental parts that can be occupied in
   order to perform some task. For example, to swing a sword, one typically must
-  occupy at least one {{hand}} and one {{attention}}. Unless a rule grants a
+  occupy at least one {{arm}} and one {{attention}}. Unless a rule grants a
   {{character}} additional {{faculties}}, {{humanoid}} {{characters}} possess
   the following six {{faculties}}:
-  * two {{hands}};
-  * one pair of {{feet}};
+  * two {{arms}};
+  * one pair of {{legs}};
   * one {{breath}};
   * two {{attention}}.
 * Their {{status}}: any {{effects}} that are currently affecting them.
@@ -241,7 +102,7 @@ zero. If a rule would result in a {{character}}'s {{stamina}} exceeding their
 maximum, their {{stamina}} instead becomes their maximum.
 
 {{Stamina}} recovers when a {{character}} rests; both the [Sleep and
-Rest](skills:natural) {{natural abilities}} recover {{stamina}}
+Rest](skills:natural) {{natural_abilities}} recover {{stamina}}
 efficiently. There is no penalty for exhausting one's {{stamina}}, but a
 {{character}} with zero {{stamina}} cannot {{activate}} {{abilities}} that
 require {{stamina}} nor voluntarily take an action that would result in losing
@@ -253,7 +114,7 @@ any {{stamina}}, they instead take 1 {{wasting}} {{damage}} for each
 #### Sanity: One's Grasp of Reality
 {{Sanity}} represents a {{character}}'s grasp of reality and protection from
 psychosis. {{Sanity}} can sometimes be spent to empower mental {{abilities}}
-or to avoid {{psychic damage}}.
+or to avoid {{psychic_damage}}.
 
 A {{humanoid}} {{character}}'s maximum {{sanity}} is determined by the sum of
 their {{level}} in the [harmony](skills:core:harmony) and
@@ -262,8 +123,8 @@ zero. If a rule would result in a {{character}}'s {{sanity}} exceeding their
 maximum, their {{sanity}} instead becomes their maximum.
 
 {{Sanity}} generally recovers slowly; both the [Sleep and
-Meditate](skills:natural) {{natural abilities}} recover two {{sanity}}, and the
-[Relax and Rest](skills:natural) {{natural abilities}} each recover one
+Meditate](skills:natural) {{natural_abilities}} recover {{sanity}} efficiently,
+and the [Relax and Rest](skills:natural) {{natural_abilities}} each recover one
 {{sanity}}. When a {{character}}'s {{sanity}} becomes zero, they gain the
 [insane](effect:insane) {{effect}}. A {{character}} with zero {{sanity}} cannot
 {{activate}} {{abilities}} that require {{sanity}} nor voluntarily take an
@@ -283,13 +144,13 @@ zero. If a rule would result in a {{character}}'s {{willpower}} exceeding their
 maximum, their {{willpower}} instead becomes their maximum.
 
 {{Willpower}} generally recovers slowly; both the [Sleep and
-Relax](skills:natural) {{natural abilities}} recover two {{willpower}}, and the
-[Meditate and Rest](skills:natural) {{natural abilities}} each recover one
+Relax](skills:natural) {{natural_abilities}} recover two {{willpower}}, and the
+[Meditate and Rest](skills:natural) {{natural_abilities}} each recover one
 {{willpower}}. There is no penalty for a {{character}} whose {{willpower}} is
 zero, but such a {{character}} cannot {{activate}} {{abilities}} that require
 {{willpower}} nor voluntarily take an action that would result in losing
 {{willpower}}. If something causes a {{character}} with zero {{willpower}} to
-lose additional {{willpower}}, they instead take one {{psychic damage}} per
+lose additional {{willpower}}, they instead take one {{psychic_damage}} per
 point of {{willpower}} that would have been lost.
 
 (character:stats:faculties)=
@@ -303,7 +164,7 @@ Many {{abilities}} require the use of one or more {{faculties}} for some amount
 of time. For example, swinging a sword typically requires one to {{occupy}} at
 least one of their {{arms}}; singing typically requires one to {{occupy}} one's
 {{breath}}. Each {{faculty}} can be occupied by at most one
-{term}`Activity<Activate>` at a time. These requirements are indicated in the
+{term}`activity<Activate>` at a time. These requirements are indicated in the
 {{ability}} description using the following icons:
 * {{arm_icon}}: one {{arm}} is required;
 * {{arms_icon}}: two {{arms}} are required;
@@ -313,7 +174,7 @@ least one of their {{arms}}; singing typically requires one to {{occupy}} one's
 * {{legs_icon}}: one pair of {{legs}} is required.
 
 Additionally the icon {{link_icon}} is used to indicate that one's {{link}}
-must be {{occupied}}; see the [chapter](skills:path) on {{path skills}} for
+must be {{occupied}}; see the [chapter](skills:path) on {{path_skills}} for
 more information.
 
 If multiple {{faculties}} are required, they are listed as a sequence; for
@@ -345,3 +206,11 @@ executed at the end of the final {{beat}} for which it specifies a required
   days, respectively. For example, {{breath_icon}}{{x}}1m indicates that one
   must {{occupy}} one's {{breath}} for 1 minute in order to {{activate}} the
   relevant {{ability}}.
+
+(characters:stats:status)=
+### Status: One's Afflictions and Effects
+A {{character}}'s {{status}} is their current condition, represented by a set
+of {{effects}}, each of which causes a specific affliction or advantage to
+affect the {{character}}. {{Effects}} are described in detail in the chapter
+[](characters:effects).
+

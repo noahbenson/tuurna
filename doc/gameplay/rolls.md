@@ -75,9 +75,9 @@ are awarded by the {term}`Narrator` due to the contextual setting of a
 
 A {term}`Modifier` may apply two kinds of changes to a {term}`Roll`:
 1. Usually, {term}`Modifier`s update the value. For example, "*You gain +1
-   {term}`Leverage` to [Charisma](skills:core:charisma) {term}`Roll`s*" or
-   "*You gain -2 {term}`Labor` to [Endurance](skills:core:endurance)
-   {term}`Roll`s*".
+   {term}`Leverage` to [Communication](skills:core:communication)
+   {term}`Roll`s*" or "*You gain -2 {term}`Labor` to
+   [Endurance](skills:core:endurance) {term}`Roll`s*".
 2. Some rules instead set the minimum or maximum value the {term}`Modifier` can
    take. For example, "*Your minimum {term}`Labor` for
    [Scholarship](skills:mundane:scholarship) {term}`Roll`s is 2*" or "*Your

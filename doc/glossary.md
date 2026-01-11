@@ -139,6 +139,13 @@ Competency Check
   
   See also: [](skills:levels:abilities)
 
+Condition
+  An {term}`Effect` that is not a {term}`Wound` and that has its own rules
+  regarding its impact on a {term}`Character`. All {term}`Condition`s are
+  described in the [chapter on effects](characters:effects).
+  
+  See also: {term}`Effect`, {term}`Wound`, [](characters:effects).
+
 Contest
   A type of {term}`Roll` in which two or more {term}`Character`s pit their
   abilities against each other.
@@ -170,7 +177,15 @@ Damage
   Harm caused to a {term}`Character` that is sufficient to cause lasting
   {term}`Wound`s if not mitigated.
   
-  See also: {term}`Wound`, [](characters:effects:damage).
+  See also: {term}`Damage Type`, {term}`Wound`, [](characters:effects:damage).
+
+Damage Type
+  The {term}`Damage Type` characterizes the kind of harm being done to a
+  {term}`Character` when they take {term}`Damage`. The types of {term}`Damage`
+  are {term}`Crushing Damage`, {term}`Cutting Damage`, {term}`Caustic Damage`,
+  {term}`Wasting Damage`, and {term}`Psychic Damage`.
+  
+  See also: {term}`Damage`, {term}`Wound`, [](characters:effects:damage).
 
 Difficulty
   A value representing how difficult a particular {term}`Roll` is. A character
@@ -188,7 +203,8 @@ Domain Skill
 
 Effect
   A condition applied to a {term}`Character` that adds or changes rules for
-  the {term}`Character`.
+  the {term}`Character`. All {term}`Effect`s are either {term}`Wound`s or
+  {term}`Condition`s.
 
   See also: [](characters:effects).
 
@@ -229,7 +245,7 @@ Experience
 Faculty
   One of a {term}`Character`'s physical or mental components, the use of
   which enable them to interact with the world. For {term}`Humanoid`
-  {term}`Character`s, the {term}`Faculties<Faculty>` are {term}`Hand`s,
+  {term}`Character`s, the {term}`Faculties<Faculty>` are {term}`Arm`s,
   {term}`Legs`, {term}`Attention`, and {term}`Breath`.
   
   See also: [](characters:stats:faculties).
@@ -387,6 +403,12 @@ Nonplayer Character
   abbreviated {term}`NPC`. {term}`NPC`s are further subdivided into
   {term}`Humanoid` and {term}`Nonhumanoid` {term}`NPC`s.
 
+Occupy
+  A {{faculty}} is {{occupied}} when it is engaged in an exclusive activity
+  required to {{activate}} an {{ability}}.
+  
+  See also: {{faculty}}, {{ability}}, [](characters:stats:faculties).
+
 Passive
   A {term}`Passive` {term}`Ability` is an {term}`Ability` that cannot be
   explicitly {term}`Activated<Activate>`. The description of each
@@ -416,7 +438,7 @@ Player Character
   abbreviated {term}`PC`.
 
 Pool
-  Any finite exhaustible resource tracked by a {term}`Character. All
+  Any finite exhaustible resource tracked by a {term}`Character`. All
   {term}`PC`s have four {term}`Pool`s: {term}`Luck`, {term}`Stamina`,
   {term}`Sanity`, and {term}`Willpower`.
   
@@ -450,6 +472,11 @@ Score
   
   See also: [Rolls](gameplay:rolls).
 
+Severity
+  A number betwen 1 and 5 indicating how debilitating a {{wound}} is.
+  
+  See also: {{wound}}, {{damage}}, [](characters:effects:wounds).
+
 Specific Labor
   {term}`Labor` that is granted to a {term}`Character` making a {term}`Roll`
   due to specific game rules.
@@ -477,6 +504,12 @@ Stamina
   empower certain physical {term}`Abilities<Ability>`.
   
   See also: [](characters:stamina).
+
+Status
+  A {term}`Character`'s current condition, as described by the set of
+  {term}`Effect`s that are affecting them.
+  
+  See also: {term}`Effect`, [](characters:stats:status).
 
 Supernatural Potential
   A {term}`Character` with Supernatural Potential in a {term}`Skill` may
