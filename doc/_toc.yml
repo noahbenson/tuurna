@@ -61,3 +61,4 @@ parts:
   - caption: Appendix 3. Game Math
     chapters:
       - file: math/dice
+      - file: math/roll
