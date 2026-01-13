@@ -138,15 +138,8 @@ are colored green, and explosions are colored cyan.
     border: 1px solid #777777;
     border-radius: 4px;
   }
-  th.title {
-    height: 36px;
-    text-align: center;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 16pt;
-  }
   p.title {
-    height: 36px;
+    height: 28px;
     text-align: left;
     vertical-align: top;
     font-weight: bold;
