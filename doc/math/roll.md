@@ -82,7 +82,7 @@ are colored green, and explosions are colored cyan.
   }
   table.buttons {
     width: 128px;
-    height: 100%;
+    height: 200px;
     border-collapse: separate;
   }
   table.layout {
@@ -90,12 +90,13 @@ are colored green, and explosions are colored cyan.
     height: 100%;
     border: none;
     border-collapse: separate;
-    border-spacing: 72px 0px;
+    border-spacing: 24px 0px;
   }
   td.leftcell {
     width: 128px;
     height: 200px;
     border: none;
+    vertical-align: top;
   }
   td.midcell {
     width: 128px;
@@ -105,8 +106,8 @@ are colored green, and explosions are colored cyan.
     vertical-align: top;
   }
   td.rightcell {
-    width: 100%;
-    height: 200px;
+    width: 340px;
+    height: 380px;
     border: none;
     text-align: left;
     vertical-align: top;
@@ -119,7 +120,9 @@ are colored green, and explosions are colored cyan.
   }
   div.rollapp {
     width: 600px;
-    height: 200px;
+    height: 396px;
+    border: 1px solid #777777;
+    border-radius: 4px;
   }
   th.title {
     height: 36px;
@@ -135,8 +138,8 @@ are colored green, and explosions are colored cyan.
   }
   div.results {
     width: 90%;
-    max-height: 180px;
-    height: 180px;
+    max-height: 388px;
+    height: 388px;
     overflow-x: hidden;
     overflow-y: auto;
     font-size: 14px;
