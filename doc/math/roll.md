@@ -11,29 +11,43 @@ are colored green, and explosions are colored cyan.
 <!-- Here we include style information used in the app -->
 <style>
   span.expdie {
-    width: 24px;
-    heigh: 24px;
+    display: inline-block;
+    width: 32px;
+    heigh: 16px;
+    font-size: 12pt;
     background-color: black;
     color: cyan;
     border: 2px solid cyan;
+    text-align: center;
+    vertical-align: middle;
   }
   span.windie {
-    width: 24px;
-    heigh: 24px;
+    display: inline-block;
+    width: 32px;
+    heigh: 26px;
+    font-size: 12pt;
     background-color: black;
     color: green;
     border: 2px solid green;
+    text-align: center;
+    vertical-align: middle;
   }
   span.lossdie {
-    width: 24px;
-    heigh: 24px;
+    display: inline-block;
+    width: 32px;
+    heigh: 16px;
+    font-size: 12pt;
     background-color: black;
     color: red;
     border: 2px solid red;
+    text-align: center;
+    vertical-align: middle;
   }
   span.blankdie {
-    width: 24px;
-    heigh: 24px;
+    display: inline-block;
+    font-size: 14pt;
+    width: 16px;
+    heigh: 16px;
   }
   div.cursed {
     width: 50%;
@@ -90,24 +104,24 @@ are colored green, and explosions are colored cyan.
     height: 100%;
     border: none;
     border-collapse: separate;
-    border-spacing: 24px 0px;
+    border-spacing: 12px 0px;
   }
   td.leftcell {
-    width: 128px;
-    height: 200px;
+    width: 96px;
+    height: 412px;
     border: none;
     vertical-align: top;
   }
   td.midcell {
-    width: 128px;
-    height: 200px;
+    width: 64px;
+    height: 412px;
     border: none;
     text-align: center;
     vertical-align: top;
   }
   td.rightcell {
-    width: 340px;
-    height: 380px;
+    width: 100%;
+    height: 412px;
     border: none;
     text-align: left;
     vertical-align: top;
@@ -120,7 +134,7 @@ are colored green, and explosions are colored cyan.
   }
   div.rollapp {
     width: 600px;
-    height: 396px;
+    height: 412px;
     border: 1px solid #777777;
     border-radius: 4px;
   }
@@ -129,17 +143,19 @@ are colored green, and explosions are colored cyan.
     text-align: center;
     vertical-align: top;
     font-weight: bold;
+    font-size: 16pt;
   }
   p.title {
     height: 36px;
     text-align: center;
     vertical-align: top;
     font-weight: bold;
+    font-size: 16pt;
   }
   div.results {
     width: 90%;
-    max-height: 388px;
-    height: 388px;
+    max-height: 400px;
+    height: 400px;
     overflow-x: hidden;
     overflow-y: auto;
     font-size: 14px;
@@ -161,36 +177,38 @@ are colored green, and explosions are colored cyan.
 
 <center><div class="rollapp" id="theRollApp">
   <table class="layout"><tr>
-    <td class="leftcell"><table class="buttons">
-      <th class="title" colspan=3>Skill Level</th>
-      <tr>
-        <td class="button"><button class="roll" id="r1">1</td>
-        <td class="button"><button class="roll" id="r2">2</td>
-        <td class="button"><button class="roll" id="r3">3</td></tr>
-      <tr>
-        <td class="button"><button class="roll" id="r4">4</td>
-        <td class="button"><button class="roll" id="r5">5</td>
-        <td class="button"><button class="roll" id="r6">6</td></tr>
-      <tr>
-        <td class="button"><button class="roll" id="r7">7</td>
-        <td class="button"><button class="roll" id="r8">8</td>
-        <td class="button"><button class="roll" id="r9">9
-          </td></tr></table></td>
+    <td class="leftcell">
+      <p class="title">Skill Level</p>
+      <table class="buttons">
+        <tr>
+          <td class="button"><button class="roll" id="r1">1</td>
+          <td class="button"><button class="roll" id="r2">2</td>
+          <td class="button"><button class="roll" id="r3">3</td></tr>
+        <tr>
+          <td class="button"><button class="roll" id="r4">4</td>
+          <td class="button"><button class="roll" id="r5">5</td>
+          <td class="button"><button class="roll" id="r6">6</td></tr>
+        <tr>
+          <td class="button"><button class="roll" id="r7">7</td>
+          <td class="button"><button class="roll" id="r8">8</td>
+          <td class="button"><button class="roll" id="r9">9
+            </td></tr></table></td>
     <td class="midcell">
       <p id="scoretag" class="title">Score</p>
       <p id="score" class="score"> </p></td>
-    <td class="rightcell"><div class="results">
+    <td class="rightcell">
       <p class="title" id="dicetag">Dice</p>
-      <p class="dicerow" id="dicerow1"> </p>
-      <p class="dicerow" id="dicerow2"> </p>
-      <p class="dicerow" id="dicerow3"> </p>
-      <p class="dicerow" id="dicerow4"> </p>
-      <p class="dicerow" id="dicerow5"> </p>
-      <p class="dicerow" id="dicerow6"> </p>
-      <p class="dicerow" id="dicerow7"> </p>
-      <p class="dicerow" id="dicerow8"> </p>
-      <p class="dicerow" id="dicerow9"> </p>
-      </div></td></table></div></center>
+      <div class="results">
+        <p class="dicerow" id="dicerow1"> </p>
+        <p class="dicerow" id="dicerow2"> </p>
+        <p class="dicerow" id="dicerow3"> </p>
+        <p class="dicerow" id="dicerow4"> </p>
+        <p class="dicerow" id="dicerow5"> </p>
+        <p class="dicerow" id="dicerow6"> </p>
+        <p class="dicerow" id="dicerow7"> </p>
+        <p class="dicerow" id="dicerow8"> </p>
+        <p class="dicerow" id="dicerow9"> </p>
+        </div></td></table></div></center>
 
 <script>
   const scoreP = document.getElementById('score');
