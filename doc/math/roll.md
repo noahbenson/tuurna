@@ -147,17 +147,17 @@ are colored green, and explosions are colored cyan.
   }
   p.title {
     height: 36px;
-    text-align: center;
+    text-align: left;
     vertical-align: top;
     font-weight: bold;
     font-size: 16pt;
   }
   div.results {
-    width: 90%;
-    max-height: 400px;
+    width: 400px;
+    max-width: 600px;
     height: 400px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     font-size: 14px;
     box-sizing: border-box;
     text-align: left;
@@ -192,7 +192,18 @@ are colored green, and explosions are colored cyan.
           <td class="button"><button class="roll" id="r7">7</td>
           <td class="button"><button class="roll" id="r8">8</td>
           <td class="button"><button class="roll" id="r9">9
-            </td></tr></table></td>
+            </td></tr></table>
+        <form id="rollfate">
+          <input type="radio" id="cursed" name="fate" value="cursed">
+          <label for="cursed">Cursed</label><br/>
+          <input type="radio" id="disadv" name="fate" value="disadv">
+          <label for="disadv">Disadvantaged</label><br/>
+          <input type="radio" id="neutral" name="fate" value="neutral" checked>
+          <label for="neutral">Neutral</label><br/>
+          <input type="radio" id="adv" name="fate" value="adv">
+          <label for="adv">Advantaged</label><br/>
+          <input type="radio" id="blessed" name="fate" value="blessed">
+          <label for="blessed">Blessed</label><br/></form></td>
     <td class="midcell">
       <p id="scoretag" class="title">Score</p>
       <p id="score" class="score"> </p></td>
@@ -216,7 +227,25 @@ are colored green, and explosions are colored cyan.
   // Select the button and message elements from the HTML
   for (let ii = 1; ii < 10; ii++) {
     const button = document.getElementById('r' + ii);
+    const form = document.getElementById('rollfate');
     button.addEventListener('click', function() {
+      const fate = form.elements['fate'].value
+      if (fate == 'cursed') {
+        expmin = 7;
+        winmin = 3;
+      } else if (fate == 'disadv') {
+        expmin = 6;
+        winmin = 3;
+      } else if (fate == 'neutral') {
+        expmin = 5;
+        winmin = 3;
+      } else if (fate == 'adv') {
+        expmin = 5;
+        winmin = 2;
+      } else {
+        expmin = 5;
+        winmin = 1;
+      }
       dice = [];
       score = 0;
       for (let jj = 1; jj < 10; jj++) {
@@ -230,10 +259,10 @@ are colored green, and explosions are colored cyan.
           rs.push(r);
           const span = document.createElement('span');
           span.textContent = ('' + r);
-          if (r > 4) {
+          if (r >= expmin) {
             score++;
             span.classList.toggle('expdie', true);
-          } else if (r > 2) {
+          } else if (r >= winmin) {
             score++;
             span.classList.toggle('windie', true);
           } else {
@@ -245,7 +274,7 @@ are colored green, and explosions are colored cyan.
           blank.classList.toggle('blankdie', true);
           row.appendChild(span);
           row.appendChild(blank);
-        } while (r > 4 && rs.length < 11);
+        } while (r >= expmin && rs.length < 11);
         dice.push(rs);
       }
       if (score > 10) {
