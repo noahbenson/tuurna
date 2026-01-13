@@ -131,31 +131,59 @@ disadvantages are detailed in the following table.
 Each kind of {{wound}} is associated with the kind of {{damage}} that caused
 it. There are {{damage_types}} that {{damage}} and {{wounds}} can take, each of
 which is described below. The {{damage_type}} does not have an effect on any
-disability caused by the {{wound}}, but 
+disability caused by the {{wound}}, but other rules can and frequently do
+interact with the {{damage_type}}.
 
-(characters:effects:wounds:damage:cutting)=
-#### Cutting Damage: Stabbing, Slashing, and Piercing
-{term}`Cutting Damage` is caused by slashing, piercing, or stabbing weapons
-such as swords, spears, claws, and teeth.
+```{list-table} Damage Types
+:header-rows: 1
 
-(characters:effects:wounds:damage:crushing)=
-#### Crushing Damage: Bludgeoning, Pounding, and Slamming
-{term}`Crushing Damage` is caused by blunt trauma from bludegoning or smashing
-weapons such as fists, mauls, clubs, and falling rocks.
+* - Name
+  - Description
+* - {{Caustic}}
+  - {{Caustic_damage}} is caused by burns and chemical irritants of all forms
+    including fire, acid, freezing, and friction.
+* - {{Crushing}} 
+  - {{Crushing_damage}} is caused by blunt trauma from bludegoning or smashing
+    weapons such as fists, mauls, clubs, and falling rocks.
+* - {{Cutting}}
+  - {{Cutting_damage}} is caused by slashing, piercing, or stabbing weapons
+     such as swords, spears, claws, and teeth.
+* - {{Psychic}}
+  - {{Psychic_damage}} is caused by telepathic/psionic mental attacks, loss of
+    morale, and observations that shake one's sanity. A {{psychic}} {{wound}}
+    might represent a character's loss of coordination with a particular
+    {{faculty}} or loss of ability to control it.
+* - {{Wasting}}
+  - {{Wasting_damage}} is caused by internal weakness, decay, or loss of
+    strength such as due to bleeding, sickness, or poison.
+```
 
-(characters:effects:wounds:damage:caustic)=
-#### Caustic Damage: Fire, Acid, and Friction
-{term}`Caustic Damage` is caused by chemical irritants of all forms including
-fire, acid, freezing, and friction.
+If a rule specifies that a {{character}} take {{damage}} but does not specify
+the {{damage_type}}, then the {{damage}} is untyped. Rules that apply when
+{{damage}} is of a specific {{damage_type}} do not apply to untyped {{damage}}.
 
-(characters:effects:wounds:damage:wasting)=
-#### Wasting Damage: Weakness, Sickness, and Decay
-{term}`Wasting Damage` is caused by internal weakness, decay, or loss of
-strength such as due to bleeding, sickness, or poison.
 
-(characters:effects:wounds:damage:psychic)=
-#### Psychic Damage: Attacks on Mental Stability, Sanity, and Morale
-{{Psychic_damage}} is caused by telepathic/psionic mental attacks, loss of
-morale, and observations that shake one's sanity. A {{psychic}} {{wound}} might
-represent a character's loss of coordination with a particular {{faculty}} or
-loss of ability to control it.
+(characters:effects:conditions)=
+## Conditions that Can Affect Characters
+
+Some rules specify that a {{character}} is subject to one of the following
+{{conditions}}.  {{Conditions}} can either affect a {{character}} or not, but
+they cannot be stacked. A {{condition}} affects a {{character}} as long as at
+least one rule requires it.
+
+(cond:asleep)=
+### Asleep
+A {{character}} who is {{asleep}} is unconscious. While {{asleep}}, all of
+their {{faculties}} are {{occupied}}, they are unable to {{activate}} any
+{{active}} {{abilities}}, and they are unable to perceive their
+surroundings. An {{asleep}} {{character}} can be awakened by {{damage}}, by
+experiencing a sufficiently extreme percept (a loud sound or bright light), by
+being physically shaken jostled.
+
+(cond:comatose)=
+### Comatose
+A {{character}} who is {{comatose}} is unconscious. While {{comatose}}, all of
+their {{faculties}} are {{occupied}}, they are unable to {{activate}} any
+{{active}} {{abilities}}, and they are unable to perceive their surroundings.
+
+

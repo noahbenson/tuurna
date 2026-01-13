@@ -207,6 +207,14 @@ executed at the end of the final {{beat}} for which it specifies a required
   must {{occupy}} one's {{breath}} for 1 minute in order to {{activate}} the
   relevant {{ability}}.
 
+#### The Allocation of Attention
+{{Attention}} is a valuable resource in the game, and many {{abilities}}, both
+{{passive}} and {{active}} require either that an {{attention}} be {{occupied}}
+or that a {{character}} has {{spare_attention}}. A {{character}} has
+{{spare_attention}} whenever at least one of their {{attention}} meets two
+criteria: (1) it is not {{occupied}} and (2) it is not the location of a
+{{wound}} of {{severity}} 4 or 5.
+
 (characters:stats:status)=
 ### Status: One's Afflictions and Effects
 A {{character}}'s {{status}} is their current condition, represented by a set

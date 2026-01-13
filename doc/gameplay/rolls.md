@@ -1,129 +1,118 @@
 # Rolls
 
-Frequently during gameplay, a {term}`Character` will attempt to do something
-whose outcome is not immediately obvious to the {term}`Narrator`. For example,
-a {term}`Character` may attempt to leap across a cavern or to pick a lock. The
-outcomes of such actions depend on the skills of the {term}`Character`
-performing the action. In such cases, the {term}`Narrator` may use one or more
-{term}`Roll`s to help adjudicate the outcome.
+Frequently during gameplay, a {{character}} will attempt to do something whose
+outcome is not immediately obvious to the {{narrator}}. For example, a
+{{character}} may attempt to leap across a cavern or to pick a lock. The
+outcomes of such actions depend on the skills of the {{character}} performing
+the action. In such cases, the {{narrator}} may use one or more {{rolls}} to
+help adjudicate the outcome.
 
 
 (gameplay:rolls)=
 ## The Rules of a Roll
 
-All {term}`Roll`s are made by a {term}`Character` using a {term}`Skill`. When
-the {term}`Narrator` calls for a {term}`Roll`, it is up to them to decide what
-{term}`Skill` is appropriate. To execute the {term}`Roll`, the {term}`Player`
-rolls a number of 6-sided dice equal to their {term}`PC`'s {term}`Level` in the
-{term}`Skill`. Each die whose value is 1 or 2 counts as a *loss*. Each die
-whose value is 3 or 4 counts as a *win*. Each die whose value is 5 or 6 both
-counts as a *win* and causes an additional die to be rolled and treated
-identically. The {term}`Roll`'s {term}`Score` is the total number of *win*
-values rolled or 9, whichever is lower. If a rule grants a {term}`Character`
-{term}`Supernatural Potential` in a {term}`Skill`, then the {term}`Character`
-may achieve a {term}`Score` as high as 12 when making a {term}`Roll` instead of
-9.
+All {{rolls}} are made by a {{character}} using a {{skill}}. When the
+{{narrator}} calls for a {{roll}}, it is up to them to decide what {{skill}} is
+appropriate. To execute the {{roll}}, the {{player}} rolls a number of 6-sided
+dice equal to their {{PC}}'s {{level}} in the {{skill}}. Each die whose value
+is 1 or 2 counts as a *loss*. Each die whose value is 3 or 4 counts as a
+*win*. Each die whose value is 5 or 6 both counts as a *win* and causes an
+additional die to be rolled and treated identically. The {{roll}}'s {{score}}
+is the total number of *win* values rolled or 9, whichever is lower. If a rule
+grants a {{character}} {{supernatural_potential}} in a {{skill}}, then the
+{{character}} may achieve a {{score}} as high as 12 when making a {{roll}}
+instead of 9.
 
 ```{note} 
-
-If a {term}`Player` repeatedly rolls 5s or 6s, the dice continue to
-be rerolled, and successes continue to accumulate. It is thus theoretically
-possible to achieve an arbitrarily high {term}`Score` on any {term}`Roll`, so
-long as the {term}`Character`'s {term}`Level` in the {term}`Skill` is greater
-than 0.
+If a {{player}} repeatedly rolls 5s or 6s, the dice continue to be rerolled,
+and successes continue to accumulate. It is thus theoretically possible to
+achieve an arbitrarily high {{score}} on any {{roll}}, so long as the
+{{character}}'s {{level}} in the {{skill}} is greater than 0.
 ```
 
 ```{note}
 
-It is up to the {term}`Player` to narrate the course of action of their
-{term}`PC`, and in so doing they can suggest the use of a particular
-{term}`Skill`; for example, if a {term}`Player` chooses to bash a door down,
-they can be reasonably confident that the {term}`Narrator` will call for a
-[Strength](skills:core:strength) {term}`Roll` or at least that they won't call
-for a [Memory](skills:core:memory) {term}`Roll`. It remains up to the
-{term}`Narrator` to determine when a {term}`Roll` is required and which
-{term}`Skill` or {term}`Skill`s are relevant to the circumstances.
+It is up to the {{player}} to narrate the course of action of their {{PC}}, and
+in so doing they can suggest the use of a particular {{skill}}; for example, if
+a {{player}} chooses to bash a door down, they can be reasonably confident that
+the {{narrator}} will call for a [Strength](skills:core:strength) {{roll}} or
+at least that they won't call for a [Memory](skills:core:memory) {{roll}}. It
+remains up to the {{narrator}} to determine when a {{roll}} is required and
+which {{skill}} or {{skills}} are relevant to the circumstances.
 ```
 
 (gameplay:rolls:modifiers)=
 ### Roll Modifiers: Leverage and Labor
-{term}`Roll`s are sometimes modified by contextual circumstances in the game or
-by other game rules called {term}`Modifier`s. For example, if one
-{term}`Character` uses an {term}`Ability` to injure the wrist of another
-{term}`Character`, then the injured {term}`Character` would likely have a
-penalty representing the injury's encumbrance applied to any {term}`Roll` made
-using their injured wrist. The size of the penalty (the {term}`Modifier`) would
-likely depend on the effectiveness of the {term}`Ability`.
+{{Rolls}} are sometimes modified by contextual circumstances in the game or by
+other game rules called {{modifiers}}. For example, if one {{character}} uses
+an {{ability}} to injure the wrist of another {{character}}, then the injured
+{{character}} would likely have a penalty representing the injury's encumbrance
+applied to any {{roll}} made using their injured wrist. The size of the penalty
+(the {{modifier}}) would likely depend on the effectiveness of the {{ability}}.
 
-There are two kinds of {term}`Modifier`s applied to {term}`Roll`s:
-{term}`Leverage`, which adds a flat (potentially negative) value to a
-{term}`Roll`'s {term}`Score`, and {term}`Labor`, which causes a certain number
-of the dice to be rerolled. (Both of these modifiers are described below.) When
-executing a {term}`Roll`, all changes to {term}`Leverage` are integrated, as
-are all changes to {term}`Labor`, prior to rolling any dice&mdash;each
-{term}`Roll` is executed with a single {term}`Leverage` and a single
-{term}`Labor` value.
+There are two kinds of {{modifiers}} applied to {{rolls}}: {{leverage}}, which
+adds a flat (potentially negative) value to a {{roll}}'s {{score}}, and
+{{labor}}, which causes a certain number of the dice to be rerolled. (Both of
+these modifiers are described below.) When executing a {{roll}}, all changes to
+{{leverage}} are integrated, as are all changes to {{labor}}, prior to rolling
+any dice&mdash;each {{roll}} is executed with a single {{leverage}} and a
+single {{labor}} value.
 
-All {term}`Modifier`s can be applied to a {term}`Roll` by either a game rule or
-by the {term}`Narrator`. When a game rule affects a {term}`Roll`, the
-{term}`Modifier` is called a {term}`Specific Modifier`. When the
-{term}`Narrator` affects a {term}`Roll`, the modifier is called a
-{term}`Circumstantial Modifier`. In general, {term}`Circumstantial Modifier`s
-are awarded by the {term}`Narrator` due to the contextual setting of a
-{term}`Roll` and/or the effectiveness of the strategy being employed by a
-{term}`Character`.
+All {{modifiers}} can be applied to a {{roll}} by either a game rule or by the
+{{narrator}}. When a game rule affects a {{roll}}, the {{modifier}} is called a
+{{specific_modifier}}. When the {{narrator}} affects a {{roll}}, the modifier
+is called a {{circumstantial_modifier}}. In general,
+{{circumstantial_modifiers}} are awarded by the {{narrator}} due to the
+contextual setting of a {{roll}} and/or the effectiveness of the strategy being
+employed by a {{character}}.
 
-A {term}`Modifier` may apply two kinds of changes to a {term}`Roll`:
-1. Usually, {term}`Modifier`s update the value. For example, "*You gain +1
-   {term}`Leverage` to [Communication](skills:core:communication)
-   {term}`Roll`s*" or "*You gain -2 {term}`Labor` to
-   [Endurance](skills:core:endurance) {term}`Roll`s*".
-2. Some rules instead set the minimum or maximum value the {term}`Modifier` can
-   take. For example, "*Your minimum {term}`Labor` for
-   [Scholarship](skills:mundane:scholarship) {term}`Roll`s is 2*" or "*Your
-   maximum {term}`Leverage` for [Tactics](skills:mundane:tactics) {term}`Roll`s
-   is 3*".
+A {{modifier}} may apply two kinds of changes to a {{roll}}:
+1. Usually, {{modifiers}} update the value. For example, "*You gain +1
+   {{leverage}} to [Communication](skills:core:communication) {{rolls}}*" or
+   "*You gain -2 {{labor}} to [Endurance](skills:core:endurance) {{rolls}}*".
+2. Some rules instead set the minimum or maximum value the {{modifier}} can
+   take. For example, "*Your minimum {{labor}} for
+   [Scholarship](skills:mundane:scholarship) {{rolls}} is 2*" or "*Your maximum
+   {{leverage}} for [Tactics](skills:mundane:tactics) {{rolls}} is 3*".
 
-All updates to a {term}`Modifier` are summed prior to the application of any
-minima or maxima. When multiple rules declare different minimum
-{term}`Modifier` values for a {term}`Roll`, only the rule resulting in the
-highest minimum {term}`Modifier` value is applied; for the maximum, only the
-rule resulting in the lowest maximum {term}`Modifier` value is applied.  When
-the maximum {term}`Modifier` value is less than the minimum {term}`Modifier`
-value, the minimum is ignored.
+All updates to a {{modifier}} are summed prior to the application of any minima
+or maxima. When multiple rules declare different minimum {{modifier}} values
+for a {{roll}}, only the rule resulting in the highest minimum {{modifier}}
+value is applied; for the maximum, only the rule resulting in the lowest
+maximum {{modifier}} value is applied.  When the maximum {{modifier}} value is
+less than the minimum {{modifier}} value, the minimum is ignored.
 
 (gameplay:rolls:modifiers:leverage)=
 #### What is Leverage?
-{term}`Leverage` generally represents the extent to which a course of action
-will be effective as a means of achieving its goals. A high {term}`Leverage`
-such as +3 means that a {term}`Character` is guaranteed to perform the
-{term}`Roll` as if their {term}`Skill` {term}`Level` were higher than their
-true {term}`Level` due to natural or circumstantial advantages.
+{{Leverage}} generally represents the extent to which a course of action
+will be effective as a means of achieving its goals. A high {{leverage}}
+such as +3 means that a {{character}} is guaranteed to perform the
+{{roll}} as if their {{skill}} {{level}} were higher than their
+true {{level}} due to natural or circumstantial advantages.
 
-Mechanically, a {term}`Roll`'s {term}`Leverage` is added to its
-{term}`Score`. Positive {term}`Leverage` values increase the {term}`Score`
-while negative {term}`Leverage` values result in a lower {term}`Score`.
+Mechanically, a {{roll}}'s {{leverage}} is added to its
+{{score}}. Positive {{leverage}} values increase the {{score}}
+while negative {{leverage}} values result in a lower {{score}}.
 
 (gameplay:rolls:modifiers:labor)=
 #### What is Labor?
-{term}`Labor` represents a {term}`Character`'s advantage or disadvantage on a
-{term}`Roll` that is due to their own effort or influence or the effort or
-influence of others working against them. Unlike {term}`Leverage`, which adds a
-flat number to the {term}`Score` of a {term}`Roll`, {term}`Labor` gives the
-{term}`Character` performing the {term}`Roll` either more or fewer dice to
-{term}`Roll`. A {term}`Labor` of +2, for example, would allow the
-{term}`Character` to {term}`Roll` two additional dice. If a {term}`Character`'s
-{term}`Labor` on a {term}`Roll` reduces the number of dice they {term}`Roll`
-below 1, the {term}`Character` still rolls 1 die.
+{{Labor}} represents a {{character}}'s advantage or disadvantage on a {{roll}}
+that is due to their own effort or influence or the effort or influence of
+others working against them. Unlike {{leverage}}, which adds a flat number to
+the {{score}} of a {{roll}}, {{labor}} gives the {{character}} performing the
+{{roll}} either more or fewer dice to {{roll}}. A {{labor}} of +2, for example,
+would allow the {{character}} to {{roll}} two additional dice. If a
+{{character}}'s {{labor}} on a {{roll}} reduces the number of dice they
+{{roll}} below 1, the {{character}} still rolls 1 die.
 
 ```{note}
 
-Note that, although {term}`Leverage` is statistically identical to
-{term}`Labor`&mdash;in that the expected advantage of rolling 1 additional die
-is 1 additional {term}`Score`, which is exactly what is provided by a point of
-{term}`Leverage`&mdash;a point of {term}`Labor` can potentially provides the
-{term}`Character` with either no additional {term}`Score` or with a bonus to
-their {term}`Score` that is substantially more than 1.
+Note that, although {{leverage}} is statistically identical to
+{{labor}}&mdash;in that the expected advantage of rolling 1 additional die is 1
+additional {{score}}, which is exactly what is provided by a point of
+{{leverage}}&mdash;a point of {{labor}} can potentially provides the
+{{character}} with either no additional {{score}} or with a bonus to their
+{{score}} that is substantially more than 1.
 ```
 
 (gameplay:rolls:modifiers:examples)=
@@ -132,32 +121,30 @@ their {term}`Score` that is substantially more than 1.
 TODO
 
 In the following examples, we rely on two characters: Ylir and Zejhe. Ylir's
-{term}`Level` in the [Armaments](skills:mundane:armaments) {term}`Skill` is 5;
-Zejhe's {term}`Level` in the [Instinct](skills:core:instinct)
-{term}`Skill` is 4 and in the [Armaments](skills:mundane:armaments) is 2.
+{{level}} in the [Armaments](skills:mundane:armaments) {{skill}} is 5; Zejhe's
+{{level}} in the [Instinct](skills:core:instinct) {{skill}} is 4 and in the
+[Armaments](skills:mundane:armaments) is 2.
 
 
 ## What kinds of situations call for rolls?
 
-Broadly speaking, there are two types of situations that require {term}`Roll`s
-to adjudicate: {term}`Check`s and {term}`Contest`s.
-
+Broadly speaking, there are two types of situations that require {{rolls}} to
+adjudicate: {{checks}} and {{contests}}.
 
 (gameplay:rolls:checks)=
 ### Skill Checks
-
 Some narrative situations that arise in gameplay represent attempts to resolve
 a static challenge that exist in the world. In such a situation, the outcome
-depends only on whether one can apply one's {term}`Skill` in the moment with
-sufficient grace to overcome a fixed {term}`Difficulty`. Such
-{term}`Check`s are in contrast to contested rolls ({term}`Contest`s) in
-which one's skill is set against that of another.
+depends only on whether one can apply one's {{skill}} in the moment with
+sufficient grace to overcome a fixed {{difficulty}}. Such {{checks}} are in
+contrast to contested rolls ({{contests}}) in which one's skill is set against
+that of another.
 
-When the {term}`Narrator` feels that an outcome is uncertain, they must decide
-on the {term}`Skill` (or {term}`Skill`s) that can resolve the {term}`Check` and
-the {term}`Check`'s {term}`Difficulty`. The {term}`Character` or
-{term}`Character`s must then execute the {term}`Roll`. The {term}`Narrator`
-then compares the character's {term}`Score` against the {term}`Difficulty`
+When the {{narrator}} feels that an outcome is uncertain, they must decide on
+the {{skill}} (or {{skills}}) that can resolve the {{check}} and the
+{{check}}'s {{difficulty}}. The {{character}} or {{characters}} must then
+execute the {{roll}}. The {{narrator}} then compares the character's {{score}}
+against the {{difficulty}}
 
 ```{list-table} Difficulty Levels
 :header-rows: 1
@@ -211,73 +198,68 @@ then compares the character's {term}`Score` against the {term}`Difficulty`
     impossible task only about two out of three times.
 ```
 
-When a {term}`Check` occurs, the {term}`Narrator` will narrate the challenge
-and request that one or more {term}`Character`s make a {term}`Roll` in a
-particular {term}`Skill`. Generally speaking, the {term}`Check` is succeeded if
-the {term}`Score` of the {term}`Roll` is greater than or equal to the
-{term}`Difficulty`, though, in some cases, there may be multiple levels of
-success. For example, when trying to remember a point of history, a
-{term}`Character` who {term}`Roll`s 6 [Scholarship](skills:mundane:scholarship)
-would likely remember more details than a {term}`Character` who {term}`Roll`s 5
-but fewer than one who {term}`Roll`s 7.
+When a {{check}} occurs, the {{narrator}} will narrate the challenge and
+request that one or more {{characters}} make a {{roll}} in a particular
+{{skill}}. Generally speaking, the {{check}} is succeeded if the {{score}} of
+the {{roll}} is greater than or equal to the {{difficulty}}, though, in some
+cases, there may be multiple levels of success. For example, when trying to
+remember a point of history, a {{character}} who {{rolls}} 6
+[Scholarship](skills:mundane:scholarship) would likely remember more details
+than a {{character}} who {{rolls}} 5 but fewer than one who {{rolls}} 7.
 
-When a group {term}`Check` is required, the {term}`Narrator` will decide
-whether the {term}`Difficulty` must be met by the maximum, the minimum, or the
-average value rolled. The maximum value should typically be used when any
-{term}`Character`'s success would yield success, such as when trying to spot
-something hidden. The minimum value should typically be used when any
-{term}`Character`'s failure would yield failure, such as when attempting to
-sneak past guards. The average should typically be used when all
-{term}`Character`s have equal opportunity to contribute to success, such as
-when trying to lift something heavy.
+When a group {{check}} is required, the {{narrator}} will decide whether the
+{{difficulty}} must be met by the maximum, the minimum, or the average value
+rolled. The maximum value should typically be used when any {{character}}'s
+success would yield success, such as when trying to spot something hidden. The
+minimum value should typically be used when any {{character}}'s failure would
+yield failure, such as when attempting to sneak past guards. The average should
+typically be used when all {{characters}} have equal opportunity to contribute
+to success, such as when trying to lift something heavy.
 
 (gameplay:rolls:contests)=
 ### Contests of Skill
-
-{term}`Contest`s occur when two or more {term}`Character`s act in conflict. In
-such a case the {term}`Narrator` must decide which {term}`Skill` each character
-is must {term}`Roll` and whether there is {term}`Leverage` inherent in the
-contest.  {term}`Leverage` occurs when one {term}`Character` has an advantage
-or is using a strategy that is inherently more advantageous in the
-{term}`Contest`. For example, if one {term}`Character` were channeling fire at
-another {term}`Character` who was countering with an origami shield, the
-character using the fire would have substantial {term}`Leverage` due to paper's
-inherent weakness to fire. The {term}`Narrator` might award five points of
-{term}`Leverage` to the fire sorcerer in such a case.
+{{Contests}} occur when two or more {{characters}} act in conflict. In such a
+case the {{narrator}} must decide which {{skill}} each character is must
+{{roll}} and whether there is {{leverage}} inherent in the contest.
+{{Leverage}} occurs when one {{character}} has an advantage or is using a
+strategy that is inherently more advantageous in the {{contest}}. For example,
+if one {{character}} were channeling fire at another {{character}} who was
+countering with an origami shield, the character using the fire would have
+substantial {{leverage}} due to paper's inherent weakness to fire. The
+{{narrator}} might award five points of {{leverage}} to the fire sorcerer in
+such a case.
 
 ```{note}
 
-In some cases, the {term}`Narrator` may choose to award {term}`Leverage`
-to multiple {term}`Character`s in a {term}`Contest`, for example if each
-of the {term}`Character`s employs a different strategy that is nonetheless
-effective.
+In some cases, the {{narrator}} may choose to award {{leverage}} to multiple
+{{characters}} in a {{contest}}, for example if each of the {{characters}}
+employs a different strategy that is nonetheless effective.
 ```
 
 ```{note}
 
-The {term}`Narrator` may choose to award negative {term}`Leverage` in some
-cases to indicate that a strategy is especially poor.
+The {{narrator}} may choose to award negative {{leverage}} in some cases to
+indicate that a strategy is especially poor.
 ```
 
-Once both {term}`Character`s have {term}`Roll`ed their respective
-{term}`Skill`s, the outcome is determined by the sum of each
-{term}`Character`'s {term}`Score` and {term}`Leverage`. Typically, the
-{term}`Character` with the highest sum wins the {term}`Contest`, but it is up
-to the {term}`Narrator` to compares these values and narrates the outcome. The
-{term}`Narrator` may choose to narrate a different outcome if, for example, the
-sum of {term}`Score` and {term}`Leverage` for one {term}`Character` is
-substantially higher than that of the other. If a tie occurs when a tie is not
-possible, then the {term}`Contest` is rerolled.
+Once both {{characters}} have {{rolled}} their respective {{skills}}, the
+outcome is determined by the sum of each {{character}}'s {{score}} and
+{{leverage}}. Typically, the {{character}} with the highest sum wins the
+{{contest}}, but it is up to the {{narrator}} to compares these values and
+narrates the outcome. The {{narrator}} may choose to narrate a different
+outcome if, for example, the sum of {{score}} and {{leverage}} for one
+{{character}} is substantially higher than that of the other. If a tie occurs
+when a tie is not possible, then the {{contest}} is rerolled.
 
 
 (gameplay:rolls:fate)=
 ## The Fate of a Roll
 
-Occasionally, a rule may declare, or the {term}`Narrator` may decide, that the
-circumstances of a {term}`Roll` are especially favored or unfavored. In such
-cases, the formula for accumulating successes, failures, and rerolls is
-slightly changed to favor our disfavor the resulting {term}`Score`. The
-{term}`Fate`s are described in the following table.
+Occasionally, a rule may declare, or the {{narrator}} may decide, that the
+circumstances of a {{roll}} are especially favored or unfavored. In such cases,
+the formula for accumulating successes, failures, and rerolls is slightly
+changed to favor our disfavor the resulting {{score}}. The {{fates}} are
+described in the following table.
 
 ```{list-table} Fates
 :header-rows: 1
@@ -297,31 +279,29 @@ slightly changed to favor our disfavor the resulting {term}`Score`. The
   - Dice that show 1 or 2 count as a *win* instead of as a *loss*.
 ```
 
-A {term}`Fate` applies to a single {term}`Character`'s roll, so in a
-{term}`Contest`, some characters may make {term}`Roll`s with different 
-{term}`Fate`s.
+A {{fate}} applies to a single {{character}}'s roll, so in a {{contest}}, some
+characters may make {{rolls}} with different {{fates}}.
 
 
 (gamplay:rolls:mutliskill)=
 ## Rolls with Multiple Skills
 
-Occasionally, a rule or the {term}`Narrator` will require that a {term}`Roll`
-be performed using multiple {term}`Skill`s. In such a case, the
-{term}`Character` executes both {term}`Roll`s and uses the sum of both
-{term}`Score`s.  If the the {term}`Roll` is a {term}`Check`, then the
-{term}`Difficulty` is doubled. If the {term}`Roll` is a {term}`Contest`, then
-both players must execute {term}`Roll`s for the same number of {term}`Skill`s.
-If two {term}`Skill`s are required of only one of the {term}`Character`s, then
-the other {term}`Character` should roll their single {term}`Skill` twice.
+Occasionally, a rule or the {{narrator}} will require that a {{roll}} be
+performed using multiple {{skills}}. In such a case, the {{character}} executes
+both {{rolls}} and uses the sum of both {{scores}}.  If the the {{roll}} is a
+{{check}}, then the {{difficulty}} is doubled. If the {{roll}} is a
+{{contest}}, then both players must execute {{rolls}} for the same number of
+{{skills}}.  If two {{skills}} are required of only one of the {{characters}},
+then the other {{character}} should roll their single {{skill}} twice.
 
-For example, if one {term}`Character` is using art to try to effect an emotion
-in another {term}`Character` who does not wish to experience that emotion, then
-the {term}`Narrator` might call for a {term}`Contest` of the former's
+For example, if one {{character}} is using art to try to effect an emotion in
+another {{character}} who does not wish to experience that emotion, then the
+{{narrator}} might call for a {{contest}} of the former's
 [Craft](skills:mundane:craft) and [Communication](skills:core:communication)
 against the latter's [Communication](skills:core:communication), reasoning that
 the production of a work of art is both communication
 ([Communication](skills:core:communication)) and
-[Craft](skills:mundane:craft). The former {term}`Character` would roll both
-{term}`Skill`s while the latter {term}`Character` would roll
+[Craft](skills:mundane:craft). The former {{character}} would roll both
+{{skills}} while the latter {{character}} would roll
 [Communication](skills:core:communication) twice.
 

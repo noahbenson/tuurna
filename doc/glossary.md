@@ -39,6 +39,11 @@ Arm
   
   See also: {term}`Faculty`, [](characters:faculties).
 
+Asleep
+  A {{condition}} in which a {{character}} is unconscious but easily awakened.
+  
+  See also: [](cond:asleep).
+
 Attention
   One of a {term}`Character`'s {term}`Faculties<Faculty>` that represents the
   {term}`Character`'s mental focus. Most {term}`Humanoid` {term}`Character`s
@@ -125,6 +130,12 @@ Circumstantial Modifier
   
   See also: [Rolls](gameplay:rolls), {term}`Labor`, {term}`Leverage`,
   {term}`Modifier`, {term}`Specific Modifier`.
+
+Comatose
+  A {{condition}} in which a {{character}} is unconscious and cannot be easily
+  awakened.
+  
+  See also: [](cond:comatose).
 
 Competency Check
   A {term}`Skill` {term}`Check` to determine whether one can successfully use
@@ -551,6 +562,12 @@ Skill
   
   See also: [Introduction to Skills](skills:intro), {term}`Core Skill`,
   {term}`Mundane Skill`, {term}`Domain Skill`.
+
+Spare Attention
+  When a {{character}} has one or more {{attention}} {{faculty}} that is not
+  {{occupied}}, they are considered to have {{spare_attention}}.
+  
+  See also: {{attention}}, [](characters:stats:faculties).
 
 Tag
   A categorization given to {term}`Skill`s, {term}`Effect`s, {term}`Item`s,

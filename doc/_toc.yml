@@ -58,4 +58,6 @@ parts:
       - file: skills/domain/enchantment
       - file: skills/domain/mentalism
       - file: skills/domain/theurgy
-
+  - caption: Appendix 3. Game Math
+    chapters:
+      - file: math/dice
