@@ -182,10 +182,9 @@ how a {{character}} gains access to it. A {{character}} cannot advance
 a {{skill}} unless a rule allows them to:
 1. **{{Core_skills}}** are available to all {{characters}}. All
    {{PCs}} start with a value of 1 in every {{core_skill}}.
-2. **{{Mundane_skills}}** are {{skills}} that can be obtained via a
-   {{character}}'s {{background}} or {{backgrounds}}. When a {{character}}
-   gains access to a {{fundamental}} {{mundane_skill}}, they automatically gain
-   1 level of all {{practical_skills}} that depend on it.
+2. **{{Mundane_skills}}** are also available to all {{humanoid}} {{characters}}
+   including the {{PCs}}; all {{PCs}} start with a value of 1 in every
+   {{mundane_skill}}.
 3. **{{Path_skills}}** are {{skills}} that provide a {{character}} with a means
    of accessing the {{domain_skills}}.  {{PCs}} choose one {{path_skill}}
    during [Character Creation](characters:creation), gaining one {{level}} of

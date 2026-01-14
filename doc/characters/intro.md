@@ -153,7 +153,7 @@ zero, but such a {{character}} cannot {{activate}} {{abilities}} that require
 lose additional {{willpower}}, they instead take one {{psychic_damage}} per
 point of {{willpower}} that would have been lost.
 
-(character:stats:faculties)=
+(characters:stats:faculties)=
 ### Faculties: One's Mind and Body
 A {{character}}'s {{faculties}} represent their physical and mental parts of
 their body and mind that they can engage to perform actions in the world. Each
