@@ -37,7 +37,7 @@ Arm
   make gestures. Most {term}`Humanoid` {term}`Character`s have two {term}`Arm`
   {term}`Faculties<Faculty>` that each represent an arm and hand.
   
-  See also: {term}`Faculty`, [](characters:faculties).
+  See also: {term}`Faculty`, [](characters:stats:faculties).
 
 Asleep
   A {{condition}} in which a {{character}} is unconscious but easily awakened.
@@ -49,7 +49,7 @@ Attention
   {term}`Character`'s mental focus. Most {term}`Humanoid` {term}`Character`s
   have two {term}`Attention`.
   
-  See also: {term}`Faculty`, [](characters:faculties).
+  See also: {term}`Faculty`, [](characters:stats:faculties).
 
 Background
   A feature of a {term}`Character` that describes the character's history and
@@ -72,7 +72,7 @@ Breath
   Most {term}`Humanoid` {term}`Character`s have one {term}`Breath`
   {term}`Faculty`.
   
-  See also: {term}`Faculty`, [](characters:faculties).
+  See also: {term}`Faculty`, [](characters:stats:faculties).
 
 Campaign
   A sequence of {term}`Chapter`s of gameplay that comprise a single story arc.
@@ -317,7 +317,7 @@ Legs
   kick, etc.  Most {term}`Humanoid` {term}`Character`s have one {term}`Legs`
   {term}`Faculty` that represents both legs and feet.
   
-  See also: {term}`Faculty`, [](characters:faculties).
+  See also: {term}`Faculty`, [](characters:stats:faculties).
 
 Level
   A {term}`Character`'s ability with a particular {term}`Skill` as represented
