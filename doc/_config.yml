@@ -217,7 +217,7 @@ parse:
     mundane: "{term}`mundane<Mundane Skill>`"
     Mundane_skill: "{term}`Mundane skill<Mundane Skill>`"
     Mundane_skills: "{term}`Mundane skills<Mundane Skill>`"
-    mundane_skill: "{term}`mundane Skill`"
+    mundane_skill: "{term}`mundane skill`"
     mundane_skills: "{term}`mundane skills<Mundane Skill>`"
     Narrator: "{term}`Narrator`"
     narrator: "{term}`narrator<Narrator>`"
